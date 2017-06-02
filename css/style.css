@@ -1,0 +1,25 @@
+body{
+    /* background:#cdcdcd url(../img/complex_meitu_1.png) repeat-x; */
+    /* background-image: -webkit-canvas(identifier); */
+    /* background:#fff repeat-x; /\*#f7f8fa*\/ */
+    height:100%;
+    width:100%;
+    text-align:center;
+}
+
+div#header{
+    /* height:150px; */
+    /* width:80px; */
+
+    /* background:#03549a center no-repeat; */
+    border-bottom: 2px solid #e7eaf1;
+}
+
+div#header h1{
+font-family:Courier New,Arial, Helvetica, sans-serif;
+font-size:29px;    
+}
+div#header p{
+        font-family:Helvetica, sans-serif;
+	font-size:15px;
+}
