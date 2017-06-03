@@ -18,6 +18,16 @@ div#header{
     margin:0 auto;
 }
 
+div#header a h1{
+    color:black;
+
+    text-decoration:none;
+}
+div#header a {
+    color:black;
+
+    text-decoration:none;
+}
 div#header h1{
     
 /* font-family:Courier New,Arial, Helvetica, sans-serif; */
@@ -53,6 +63,9 @@ div#content li{
        display:inline; 
 }
 
+div#content li a h1{
+    color:red;
+}
 div#content li a{
     font-size:27px;
     /* text-decoration:none; */
