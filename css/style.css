@@ -9,18 +9,76 @@ body{
 
 div#header{
     /* height:150px; */
-    /* width:80px; */
+    width:60%;
 
     /* background:#03549a center no-repeat; */
     border-bottom: 2px solid #e7eaf1;
-        text-align:center;
+    text-align:center;
+    margin:0 auto;
 }
 
 div#header h1{
-font-family:Courier New,Arial, Helvetica, sans-serif;
-font-size:29px;    
+    font-family:Courier New,Arial, Helvetica, sans-serif;
+    font-size:29px;    
 }
 div#header p{
-        font-family:Helvetica, sans-serif;
-	font-size:15px;
+    font-family:PingFang SC,Helvetica, sans-serif;
+    font-size:15px;
+}
+
+div#content{
+    width:60%;
+    height:27px;
+    /* height:20px; */
+    font-family:PingFang SC,Helvetica, sans-serif;
+    /* margin-top:35px; */
+    /* margin-left:210px; */
+    margin:20px auto;
+    /* margin-left:40%; */
+    text-align:center;
+}
+div#content li{
+    /* font-size:20px; */
+    /* color:blue; */
+    text-decoration:none;
+    /* margin-left:40%; */
+    /* margin:0 auto; */
+    /* margin-left:40%; */
+    text-align:center;
+    /* float:cell; */
+/* list-style-type:none;  ssssssssssssss */
+       display:inline; 
+}
+
+div#content li a{
+    font-size:25px;
+    /* text-decoration:none; */
+    margin:20px auto;
+    /* margin-left:40%; */
+    color:black;
+    text-align:center;
+
+}
+
+
+div#intro{
+    border-right:2px solid #e7eaf1;
+    margin-right:540px;
+    margin-left:20px;
+    height:40%;
+}
+
+div#intro img{
+    height:auto;
+    width:120px;
+    
+}
+
+div#footer{
+    font-size:12px;
+    border-top: 1px solid #e7eaf1;
+    width:20%;
+    text-align:center;
+    margin:10px auto;
+    color:#8590a6;
 }
