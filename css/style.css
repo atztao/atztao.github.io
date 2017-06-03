@@ -65,10 +65,11 @@ div#content li{
 
 div#content li a h1{
     color:red;
+    text-decoration:none;
 }
 div#content li a{
     font-size:27px;
-    /* text-decoration:none; */
+    text-decoration:none;
     margin:20px auto;
     /* margin-left:40%; */
     color:black;
