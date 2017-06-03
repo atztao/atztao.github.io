@@ -30,7 +30,7 @@ div#header p{
 
 div#content{
     width:60%;
-    height:27px;
+    /* height:27px; */
     /* height:20px; */
     font-family: Helvetica, Tahoma, Arial, STXihei, “华文细黑”, Heiti, “黑体”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, sans-serif;
     /* font-family:PingFang SC,Helvetica, sans-serif; */
@@ -54,7 +54,7 @@ div#content li{
 }
 
 div#content li a{
-    font-size:25px;
+    font-size:27px;
     /* text-decoration:none; */
     margin:20px auto;
     /* margin-left:40%; */
@@ -86,3 +86,8 @@ div#footer{
     margin:30px auto;
     color:#8590a6;
 }
+
+div#archive{
+    margin:0px auto;
+}
+
