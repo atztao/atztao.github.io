@@ -38,6 +38,11 @@ div#header p{
     font-size:15px;
 }
 
+div#header q{
+    font-family:PingFang SC,Helvetica, sans-serif;
+    font-size:14px;
+}
+
 div#content{
     width:60%;
     /* height:27px; */
@@ -109,4 +114,5 @@ div#footer img{
 div#archive{
     margin:0px auto;
 }
+
 
