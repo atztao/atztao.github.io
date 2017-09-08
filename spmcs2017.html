@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2017-09-08 五 15:51 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPMCS2017</title>
+<meta name="generator" content="Org mode">
+<meta name="author" content="Tao Zhang">
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel='stylesheet' href='http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css'>
+<link rel='stylesheet' href='http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css'>
+<script src='http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js'>
+</script><script src='http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js'></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2017 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">SPMCS2017</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org01b26ee">1. Aiguo （爱国） Xu (许)</a></li>
+<li><a href="#org3d23e7a">2. Alberto Robledo</a></li>
+<li><a href="#orgec10290">3. Armen Allahverdyan</a></li>
+<li><a href="#org6cda75f">4. Changgui Gu</a></li>
+<li><a href="#org9868519">5. Chengyi Xia</a></li>
+<li><a href="#org00a4904">6. Hai-Feng Zhang</a></li>
+<li><a href="#org177d458">7. Huijie Yang</a></li>
+<li><a href="#orga86390c">8. Jianguo Liu</a></li>
+<li><a href="#orgb57bc43">9. Jiqian Zhang</a></li>
+<li><a href="#org585e3eb">10. K. Y. Michael Wong</a></li>
+<li><a href="#orgd65b9e3">11. Pan-Jun Kim</a></li>
+<li><a href="#orgbafa0d0">12. Rui Menezes</a></li>
+<li><a href="#org16d525a">13. Wenlian Lu</a></li>
+<li><a href="#org1cf510d">14. Xiao Fan LIU</a></li>
+<li><a href="#org4d198ef">15. Xin Zhang</a></li>
+<li><a href="#orgb5d5081">16. Xin-Jian Xu</a></li>
+<li><a href="#orge026351">17. Xingang Wang</a></li>
+<li><a href="#org662fecd">18. Yi Zhao</a></li>
+<li><a href="#orgcdf611d">19. Yong Zou</a></li>
+<li><a href="#orgad1fee3">20. YunFeng Chang</a></li>
+<li><a href="#org3ed08d0">21. Zi-Ke Zhang</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org01b26ee" class="outline-2">
+<h2 id="org01b26ee"><span class="section-number-2">1</span> Aiguo （爱国） Xu (许)</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Institute of Applied Physics and Computational Mathematics
+</p>
+
+<p>
+ag<sub>xu8009</sub>@163.com
+</p>
+
+<p>
+Discrete Boltzmann Modeling of Non-equilibrium Complex Flows
+</p>
+
+<p>
+In this talk, we will briefly review the progress of discrete
+Boltzmann modeling, simulation and analysis of complex flows in our
+group in recent years. The topics are relevant to multiphase flows,
+non-equilibrium phase transition, shock wave, combustion and
+hydrodynamic instability. Mathematically, the only difference of
+discrete Boltzmann from the traditional hydrodynamic modeling is that
+the NS equations are replaced by a discrete Boltzmann equation. But
+physically, this replacement has a meaningful gain: the discrete
+Boltzmann model (DBM) can work as a hydrodynamic model supplemented by
+a coarse-grained model of the Thermodynamic Non-Equilibrium (TNE)
+effects, where the hydrodynamic model can be the Navier-Stokes(NS) and
+can also beyond the NS. The observations on TNE have been used to
+access more precisely the specific aspects of TNE, to estimate more
+quantitatively the deviation amplitude from thermodynamic equilibrium
+state, to recover the main feature of real distribution function, to
+obtain more accurate viscous stress and heat flux for hydrodynamic
+modeling, to investigate various mechanisms resulting in entropy
+increase, to distinguish different stages of non-equilibrium phase
+transition, to discriminate and capture various interfaces, to
+differentiate shock waves in plasma from those in common fluids, etc. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3d23e7a" class="outline-2">
+<h2 id="org3d23e7a"><span class="section-number-2">2</span> Alberto Robledo</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Instituto de Física, Universidad Nacional Autónoma de México
+</p>
+
+<p>
+robledo@fisica.unam.mx
+</p>
+
+<p>
+An unorthodox thermal system analogue of the onset of chaos
+</p>
+
+<p>
+We systematically eliminate access to configurations of an otherwise
+elementary thermal system model until only remains a subset of them of
+vanishing measure. The thermal system consists of 2N distinguishable
+non-interacting degrees of freedom, each occupying energy levels of
+the form u<sub>j,k</sub> = 2<sup>j</sup> 2<sup>2k</sup>, j,k = 0,1,2,&#x2026; The system's configurations
+are eliminated when their energies do not match the form 2<sup>N</sup>-l,
+l=0,1,2,&#x2026;, leading to a discrete scale invariant set of available
+configurations as N approaches infinity. In doing this we achieve the
+following results: 1) The constrained thermal system becomes an
+analogue of the dynamics towards the multifractal attractor at the
+period-doubling onset of chaos. 2) The statistical-mechanical
+properties of the thermal system depart from those of the ordinary
+Boltzmann-Gibbs (BG) form and acquire features from q-statistics. 3)
+Redefinition of energy levels as logarithms of the original ones
+recovers the BG scheme and the free energy Legendre transform
+property. We demonstrate that q-entropy expressions apply naturally to
+statistical–mechanical systems that experience an exceptional
+contraction of their configuration space. We illustrate this
+circumstance for properties of systems that find descriptions in terms
+of nonlinear maps. These are size-rank functions, urbanization and
+similar processes, and settings where frequency locking takes place. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgec10290" class="outline-2">
+<h2 id="orgec10290"><span class="section-number-2">3</span> Armen Allahverdyan</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Yerevan Physics Institute
+</p>
+
+<p>
+armen.allahverdyan@gmail.com
+</p>
+
+<p>
+Modeling phoneme distribution: the effect of author-dependence 
+</p>
+
+<p>
+We study rank-frequency relations for phonemes, the minimal units that
+still relate to linguistic meaning. We show that these relations can
+be described by the Dirichlet distribution, a direct analogue of the
+ideal-gas model in statistical mechanics. This description allows us
+to demonstrate that the rank-frequency relations for phonemes of a
+text do depend on its author. The author-dependency effect is not
+caused by the author’s vocabulary (common words used in different
+texts), and is confirmed by several alternative means. This suggests
+that it can be directly related to phonemes. These features contrast
+to rank-frequency relations for words, which are both author and text
+independent and are governed by the Zipf’s law. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6cda75f" class="outline-2">
+<h2 id="org6cda75f"><span class="section-number-2">4</span> Changgui Gu</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+University of Shanghai for Science and Technology
+</p>
+
+<p>
+gu<sub>changgui</sub>@163.com
+</p>
+
+<p>
+Strengthen the circadian rhythms 
+</p>
+
+<p>
+Aging or jetlag results in weak 24 h rhythms of physiology and
+behavioral activity. We try to find some ways to strengthen the weak
+24 h rhythms from experiment and modeling, for example the voluntary
+exercise, the structure of neuronal network and so on. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9868519" class="outline-2">
+<h2 id="org9868519"><span class="section-number-2">5</span> Chengyi Xia</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Tianjin University of Technology
+</p>
+
+<p>
+xialooking@163.com
+</p>
+
+<p>
+Attack Vulnerability and Epidemic Dynamics on two interdependent
+networks 
+</p>
+
+<p>
+In this talk, I will discuss two problems, on one hand, I will talk
+about the impact of Partially coupling and coupling preference on the
+attack vulnerability on two interdependent networks; on the other
+hand, I will the epidemic processes on two multiplex networks, and
+investigate the effect of heterogeneous individual awareness on the
+spreading behaviors within complex populations. The results indicate
+that interdependency further enriches our understanding regarding the
+structural properties and dynamics within real-world networks 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org00a4904" class="outline-2">
+<h2 id="org00a4904"><span class="section-number-2">6</span> Hai-Feng Zhang</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+Anhui University
+</p>
+
+<p>
+zhhf<sub>3</sub>@163.com
+</p>
+
+<p>
+Reconstructing complex networks from discrete time series.
+</p>
+
+<p>
+Data based reconstruction of complex networked systems has been an
+active area of research in network science and engineering with
+applications in a wide range of disciplines. In this talk, I will
+introduct two methods regarding network reconstruction. One approach
+is based on the statistical inference, the other is the mean-field
+based maximum likelihood estimation approach. different approaches
+handle different situations. Our results indicate that the performance
+of each approach is superior to the existing methods. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org177d458" class="outline-2">
+<h2 id="org177d458"><span class="section-number-2">7</span> Huijie Yang</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+University of Shanghai for Science and Technology
+</p>
+
+<p>
+hjyang@ustc.edu.cn
+</p>
+
+<p>
+Visibility Graphlet Approach To Time Series 
+</p>
+
+<p>
+In the present paper we propose a new method to extract structural
+patterns at different scales in a time series. First, from a time
+series we extract all the possible segments with a specified length,
+then map every segment to a graphlet to represent the state of the
+system in the corresponding duration; Second, linking each pair of
+successive states results into a chain of states. All the
+distinguishable states form a state network (transfer matrix between
+states); Third, from the transfer matrix we can extract the short-term
+and long-term relations of the states and patterns of the time
+series. This method proves its powerful in identifying characteristics
+of deterministic processes , stochastic processes and empirical
+records for stock markets. References [1] M. Stephen, C. Gu, and
+H. Yang, Visibility Graphlet Approach to Chaotic Time Series. Chaos
+26: 053107(2016). [2] M. Stephen, C. Gu, and H. Yang. Visibility graph
+based time series analysis. PLoS ONE 10(11):e143015(2015). 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga86390c" class="outline-2">
+<h2 id="orga86390c"><span class="section-number-2">8</span> Jianguo Liu</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+Shanghai University of Finance and Economics
+</p>
+
+<p>
+liu.jianguo@sufe.edu.cn/liujg004@ustc.edu.cn
+</p>
+
+<p>
+Modelling and Application of Online User Collective behaviors 
+</p>
+
+<p>
+understanding the evolution characteristics of social relations is
+significant to identify important people who is linked by strong
+social ties in online social networks (OSNs). In this paper, we
+empirically investigate the evolution characteristics of Facebook and
+Wiki users' \emph{social signature}, capturing the distribution of
+frequency of interactions between different alters over time in ego
+network. The statistical results show that there are robust social
+signatures for collective egos based on interactions. Notably,
+individual social signature remains stable, no matter how alters
+change over time. Furthermore, we use structure information of OSNs to
+analyze the social closeness in each interval in terms of embeddedness
+measurement, presenting that alters identified from structural
+information still show the characteristic of social
+signature. Moreover, the embeddedness could predict at least average
+33.47\% alters and at most average 66.90\% alters. This work enables
+an effective method for identifying potential highly-related friends
+based on the regularity of social signature in online social network. 
+</p>
+
+
+<hr>
+
+
+<p>
+Modelling and Application of Online User Collective behaviors
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb57bc43" class="outline-2">
+<h2 id="orgb57bc43"><span class="section-number-2">9</span> Jiqian Zhang</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+Anhui Normal University
+</p>
+
+<p>
+zhangcdc@ahnu.edu.cn/jqzhang<sub>cn</sub>@sina.com
+</p>
+
+<p>
+Study on chaotic characteristics of memristor in neuron system 
+</p>
+
+<p>
+The memristors have many meaningful characteristics, such as, memory, forgetting property as well as experiential learning and so on. These properties are similar to those of biological nerve synapses, therefore, the memristor may be used as the synapse between neurons to construct a neural network, and study the chaotic behavior and law theoretically by using numerical simulation. 
+</p>
+
+<hr>
+
+<p>
+A New Nonlinear Dopant Kinetic Model of Memristor 
+</p>
+
+<p>
+To further optimize the drift model of memristor, in this paper, based
+on both the existing nonlinear doping dynamics model and sinusoidal
+function, a new model is proposed, which agrees with the five criteria
+for describing the migration characteristics of nonlinear
+dopant. Secondly, to improve the flexibility of the new model, two
+internal parameters are introduced, and it is verified by using the
+coupling variable resistor model proposed by HP team. The simulation
+results show that the model is well matched with the authoritative
+model. At the same time, the new model can also effectively avoid the
+"terminal state problem" of the memristor. Furthermore, when the
+different driving voltages with adjustable amplitude and frequency are
+introduced, the memristor characteristics can well realize in this new
+model. Our results show that the new model not only accords with the
+standard of the window function, but also has better flexibility. It
+will provide a new idea for the memristor to be widely used in
+intelligent calculation, artificial synapse and many other fields. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org585e3eb" class="outline-2">
+<h2 id="org585e3eb"><span class="section-number-2">10</span> K. Y. Michael Wong</h2>
+<div class="outline-text-2" id="text-10">
+<p>
+Hong Kong University of Science and Technology
+</p>
+
+<p>
+phkywong@ust.hk
+</p>
+
+<p>
+How Neural Systems Fuse Information from Different Channels 
+</p>
+
+
+<p>
+Neural systems gather information from different channels resulting in
+enhanced reliability. The optimal estimate is given by Bayes' rule,
+and remarkably the brain can achieve this optimum. It is therefore
+interesting to consider the neural architecture and mechanism
+underlying this feat. We study a decentralized network architecture
+where same-channel and cross-channel information are processed in
+parallel. Using stochastic gradient descent, projections to basis
+functions, and a perturbative approach in the limit of weak
+correlation, the most striking discovery is that the direct and
+indirect cross-channel pathways are opposite to each other &#x2013; an
+apparently redundant architecture. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd65b9e3" class="outline-2">
+<h2 id="orgd65b9e3"><span class="section-number-2">11</span> Pan-Jun Kim</h2>
+<div class="outline-text-2" id="text-11">
+<p>
+Korea Advanced Institute of Science and Technology
+</p>
+
+<p>
+pjkim@apctp.org
+</p>
+
+<p>
+Systems Approach to Complex Human Microbial Networks 
+</p>
+
+<p>
+Our resident gut microbial community, or gut microbiome, provides us
+with a variety of biochemical capabilities not encoded in our
+genes. This human gut microbiome is linked not only to our health, but
+also to various disorders such as obesity, cancer, and diabetes. We
+constructed the literature-curated global interaction network of the
+human gut microbiome mediated by various chemicals. Using our network,
+we conducted a systematic analysis of the microbiomes in type 2
+diabetes patients, and revealed the metabolic infrastructure of the
+gut ecosystem implicated in disease. Our network framework shows
+promise for investigating complex microbe-microbe and host-microbe
+chemical cross-talk, and identifying disease-associated features. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbafa0d0" class="outline-2">
+<h2 id="orgbafa0d0"><span class="section-number-2">12</span> Rui Menezes</h2>
+<div class="outline-text-2" id="text-12">
+<p>
+ISCTE-IUL and BRU-IUL
+</p>
+
+<p>
+rui.menezes@iscte.pt
+</p>
+
+<p>
+Hysteresis and Duration Dependence of Financial Crises in the US:
+Evidence from 1871-2016 
+</p>
+
+<p>
+This paper analyses the duration dependence of events that trigger
+volatility persistence in stock markets. Such events, in our context,
+are monthly spells of contiguous price decline or negative returns
+for the S&amp;P500 stock market index over the last 145 years. Factors
+known to affect the duration of these spells are the magnitude or
+intensity of the price decline, long-term interest rates and economic
+recessions, among others. The result of interest is the conditional
+probability of ending a spell of consecutive months over which stock
+market returns remain negative. In this paper, we rely on continuous
+time survival models to investigate this question. Several
+specifications were attempted under the accelerated failure time
+assumption. The best fit of the various models endeavored was
+obtained for the log-Normal distribution. This distribution yields a
+non-monotonic hazard function that increases up to a maximum and then
+decreases. The peak is achieved 2-3 months after the spells onset
+with a hazard of around 0.9 or higher; this hazard then decays
+asymptotically to zero. Spell duration increases during recessions,
+when interest rate rises and when price declines are more
+intense. The main conclusion is that short spells of negative returns
+are mainly frictional while long spells become structural and trigger
+hysteresis effects after an initial period of adjustment. These
+results may be important for policy-makers. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org16d525a" class="outline-2">
+<h2 id="org16d525a"><span class="section-number-2">13</span> Wenlian Lu</h2>
+<div class="outline-text-2" id="text-13">
+<p>
+School of Mathematical Sciences, Fudan University
+</p>
+
+<p>
+wenlian@fudan.edu.cn
+</p>
+
+<p>
+Some progresses in modeling, analysis and application of
+interdependent complex networks 
+</p>
+
+<p>
+Interdependent networks are of basic models towards networks of
+networks, where the interactions between subnetworks are considered
+to support each subnetworks. This model has widely applied to model
+infrastructure networks, social networks, and economic networks
+etc. this talk, I will introduce some progresses in analyzing and
+applying this sort of models in twofold. First, I will present a
+simple and efficient algorithm to maximize the largest eigenvalue of
+interdependent network by optimally selecting the inter-network
+connects. Second, I will present an example of applying this model
+for a novel bi-clustering algorithm by detecting the community
+structure on interdependent networks. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1cf510d" class="outline-2">
+<h2 id="org1cf510d"><span class="section-number-2">14</span> Xiao Fan LIU</h2>
+<div class="outline-text-2" id="text-14">
+<p>
+Southeast University, China
+</p>
+
+<p>
+xfliu@seu.edu.cn
+</p>
+
+<p>
+Analysis and Modeling of the Adaptive Coevolution in Heterogeneous
+Double-Layer Networks 
+</p>
+
+<p>
+This paper constructs a heterogeneous double-layer network of
+scientific collaboration and citation, using a dataset of computer
+science academic literatures. This paper examines the adaptive
+coevolution phenomenon between scientific collaboration and citation
+and presents a model of the heterogeneous double-layer networks which
+not only reproduces the adaptive coevolution phenomenon of the real
+network, but also fits multiple measures of real network well. Our
+work may provide a feasible way to understanding the adaptive
+inter-layer interaction in heterogeneous double-layer networks. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4d198ef" class="outline-2">
+<h2 id="org4d198ef"><span class="section-number-2">15</span> Xin Zhang</h2>
+<div class="outline-text-2" id="text-15">
+<p>
+Shanghai Maritime University
+</p>
+
+<p>
+zhangxin@shmtu.edu.cn
+</p>
+
+<p>
+Risk Contagion Analysis Based on a Complex Credit Network Model 
+</p>
+
+<p>
+The recent crisis has brought to the fore a crucial question that
+remains still open: what is the role of financial network plays in
+systemic risk propagation? We have presented an analysis of the
+impact that network topology can have on systemic risk. Our results
+extend previous studies on contagion in random interbank network to
+coupled credit network consisting of bank and firm sector. We
+investigate the stability of several benchmark topologies in a simple
+default cascading dynamics in credit networks.Our results emphasize
+the role played by “contagious links” and show that institutions
+which contribute most to network instability have both large
+connectivity and a large fraction of contagious links. We also find
+that no single topology is always superior to others. In particular,
+scale-free networks can be both more robust and more fragile than
+homogeneous architectures. This finding has important policy
+implications. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb5d5081" class="outline-2">
+<h2 id="orgb5d5081"><span class="section-number-2">16</span> Xin-Jian Xu</h2>
+<div class="outline-text-2" id="text-16">
+<p>
+Shanghai University
+</p>
+
+<p>
+xinjxu@shu.edu.cn
+</p>
+
+<p>
+Information propagation in directed networks 
+</p>
+
+<p>
+The investigation of structure and dynamics of complex networks has
+attracted contributions from applied mathematicians and statistical
+physicists over the last several decades. Of high interest is a broad
+range of dynamical processes unfolding over underline networks, e.g.,
+information propagation. The threshold model has been widely adopted
+as a classic model for studying such contagion processes on social
+networks. Previous studies, however, have paid less attention on
+sddirected properties of nodes or links. In this paper, a modified
+threshold model on directed networks has been proposed and studied by
+Monte-Carlo simulations. Two regimes of the underline networks are
+identified in which the system exhibits distinct behaviors. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge026351" class="outline-2">
+<h2 id="orge026351"><span class="section-number-2">17</span> Xingang Wang</h2>
+<div class="outline-text-2" id="text-17">
+<p>
+Shannxi Normal University
+</p>
+
+<p>
+wangxg@snnu.edu.cn
+</p>
+
+<p>
+Synchronous Patterns in Complex Networks 
+</p>
+
+<p>
+An intriguing phenomenon observed in systems of coupled oscillators
+is the cluster synchronization. In cluster synchronization,
+oscillators within the same cluster are highly synchronized, but are
+not if the oscillators are from different clusters. Previously,
+cluster synchronization has been studied in systems of regular
+network structures, and its emergence is attributed to the breaking
+of the network symmetry. Recently, stimulated by the progress of
+network science, cluster synchronization in complex networks begins
+to be interested too. In this talk, we will introduce our recent
+progresses on the formation of synchronous clusters in complex
+networks, including 1) how to figure out the cluster synchronization
+states according to the network symmetries; 2) how to analyze the
+stability of the cluster synchronization states; and 3) how to
+control the cluster synchronization states. The studies enrich our
+understanding on the pattern dynamics of complex networks, and are of
+implications to the functionality and operation of many realistic
+systems. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org662fecd" class="outline-2">
+<h2 id="org662fecd"><span class="section-number-2">18</span> Yi Zhao</h2>
+<div class="outline-text-2" id="text-18">
+<p>
+Harbin Institute of Technology Shenzhen Graduate School
+</p>
+
+<p>
+zhao.yi@hit.edu.cn
+</p>
+
+<p>
+Progress on Equivalent transformation and reciprocal characterization
+between complex networks and time series 
+</p>
+
+<p>
+The complex networks and time series are two classical paradigms to
+describe the real complex systems. But the complexity of systems
+determines that we merely can obtain the specific properties of the
+object given the single paradigm. To address this problem, recently
+transformation between complex networks and time series becomes
+promising research. People begin to pay much attention to their
+internal relationship. Inspired by the previous work, we emphasize
+the theoretical foundation of equivalent transformation between
+complex networks and time series so as to ensure the consistency of
+dynamics of complex system during transformation, thereby providing
+theoretical evidences for their reciprocal characterization. Based on
+that, we confirm and quantify the corresponding relationship between
+both counterparts, and provide characterization methods for their
+integrated application in practice so as to comprehensively
+understand complex systems from the dual perspectives of complex
+networks and time series. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcdf611d" class="outline-2">
+<h2 id="orgcdf611d"><span class="section-number-2">19</span> Yong Zou</h2>
+<div class="outline-text-2" id="text-19">
+<p>
+East China Normal University
+</p>
+
+<p>
+yzou@phy.ecnu.edu.cn
+</p>
+
+<p>
+Explosive phenomena in complex networks 
+</p>
+
+<p>
+Explosive percolation, which was discovered in 2009, corresponds to
+an abrupt change in the network’s structure, and explosive
+synchronization (which is concerned, instead, with the abrupt
+emergence of a collective state in the networks’ dynamics) was
+studied as early as the first models of globally coupled phase
+oscillators were taken into consideration. Given their relevance to
+practical applications, explosive percolation and synchronization
+have attracted a comprehensive and lasting attention in various
+fields, and have stimulated a large amount of exciting works and
+debates. The result is that many substantial contributions and
+progresses (including experimental verifications) are today
+available, which provide a rather deep insight on the crucial
+structural and dynamical mechanisms at the basis of the abruptness of
+the two transitions. It is therefore now the time to offer a
+comprehensive review on the current state of the art on the subject,
+which would offer a reflected and thought out viewpoint on the many
+achievements and developments, as well as a weighted and meditated
+outlook to the still open questions and to the possible directions
+for future research. In this talk, I will show some of our
+contributions in these two research directions. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgad1fee3" class="outline-2">
+<h2 id="orgad1fee3"><span class="section-number-2">20</span> YunFeng Chang</h2>
+<div class="outline-text-2" id="text-20">
+<p>
+Chungbuk National University
+</p>
+
+<p>
+changyf@ctgu.edu.cn
+</p>
+
+<p>
+No Title
+</p>
+
+<p>
+Communities are ubiquitous in nature and society. Individuals that
+share common properties often self-organize to form
+communities. Avoiding the shortages of computation complexity,
+pre-given information and unstable results in different run, we
+propose a simple and efficient method to deepen our understanding of
+the emergence and diversity of communities in complex systems. By
+introducing the rational random selection, our method reveals the
+hidden deterministic and normal diverse community states of community
+struc- ture. To demonstrate this method, we test it with real-world
+systems. The results show that our method could not only detect
+community structure with high sensitivity and reliability, but also
+provide instructional information about the hidden deterministic
+community world and our normal diverse community world by giving out
+the core-community, the real-community, the tide and the
+diversity. This is of paramount importance in understanding,
+predicting, and controlling a variety of collective behaviors in
+complex systems. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3ed08d0" class="outline-2">
+<h2 id="org3ed08d0"><span class="section-number-2">21</span> Zi-Ke Zhang</h2>
+<div class="outline-text-2" id="text-21">
+<p>
+Hangzhou Normal University
+</p>
+
+<p>
+zhangzike@gmail.com
+</p>
+
+<p>
+Machine Learning on Complex Networks 
+</p>
+
+<p>
+Nowadays, methods based on machine learning are widely adopted on complexity sciences, as well as statistical physics. In this talk, I shall introduce the research background and our recent work on this topic. 
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>
