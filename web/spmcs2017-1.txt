@@ -1,0 +1,53 @@
+| ID  | Full Name              | Affiliation                                                     | State     | Oral report | Arrival Time | Accommodation |
+| #11 | Sumiyoshi Abe          | Mie University, Japan                                           | Completed | Yes         |              | Single room   |
+| #59 | Armen Allahverdyan     | Yerevan Physics Institute                                       | Completed | Yes         |              | Single room   |
+| #10 | YunFeng Chang          | Chungbuk National University                                    | Completed | Yes         |              | Double room   |
+| #24 | liju chen              | Central China Normal University                                 | Completed |             |              | Double room   |
+| #20 | Zhisheng Cheng         | Central China Normal University                                 | Completed | No          |              | Single room   |
+| #18 | Liping Chi             | Central China Normal University                                 | Completed | Yes         |              | Single room   |
+| #42 | Shengfeng Deng         | Central China Normal Universtiy                                 | Completed |             | 11/10/2017   | Double room   |
+| #54 | Cuixia Gao             | Jiangsu University                                              | Completed | No          |              | Double room   |
+| #15 | Changgui Gu            | University of Shanghai for Science and Technology               | Completed | Yes         | 13/10/2017   | Single room   |
+| #53 | Dun Han                | Jiangsu University                                              | Completed | No          |              | Single room   |
+| #22 | Jihui Han              | Central China Normal University                                 | Completed | No          |              | Single room   |
+| #47 | Chin-Kun Hu            | Institute of Physics of Academia Sinica                         | Completed | Yes         | 11/10/2017   | Double room   |
+| #61 | Meng Hu                | Beijing Normal University, China                                | Completed | No          |              | Double room   |
+| #14 | zhifu huang            | huaqiao university                                              | Completed | Yes         |              | Single room   |
+| #29 | Zi-Gang Huang          | Lanzhou University                                              | Completed | Yes         | 12/10/2017   | Single room   |
+| #48 | Jian Jiang             | Wuhan Textile University                                        | Completed |             |              | Single room   |
+| #57 | Pan-Jun Kim            | Korea Advanced Institute of Science and Technology              | Completed | Yes         |              | Single room   |
+| #37 | Cong Li                | Fudan University                                                | Completed |             |              | Single room   |
+| #17 | Wei Li                 | Hua-Zhong Normal University                                     | Completed | Yes         |              | Single room   |
+| #63 | Zhiyan Li              | ccnu                                                            | Completed |             | 11/10/2017   | Double room   |
+| #27 | Jianguo Liu            | Shanghai University of Finance and Economics                    | Completed | Yes         |              | Single room   |
+| #56 | Jianguo Liu            | Shanghai University of Finance and Economics                    | Completed | Yes         |              | Single room   |
+| #35 | Xiao Fan LIU           | Southeast University, China                                     | Completed | Yes         | 12/10/2017   | Single room   |
+| #34 | Wenlian Lu             | School of Mathematical Sciences, Fudan University               | Completed |             |              | Single room   |
+| #45 | Liang Luo              | Huazhong Agricultural University                                | Completed |             |              | Single room   |
+| #13 | Rui Menezes            | ISCTE-IUL and BRU-IUL                                           | Completed | Yes         |              | Double room   |
+| #41 | Ida Moham              | Msc physics student                                             | Completed |             |              | Single room   |
+| #25 | Mauricio Pato          | University of São Paulo                                         | Completed | Yes         |              | Single room   |
+| #38 | Alberto Robledo        | Instituto de Física, Universidad Nacional Autónoma de México | Completed | Yes         | 10/10/2017   | Single room   |
+| #46 | Chuan-sheng Shen       | Anqing Normal University                                        | Completed |             | 12/10/2017   | Double room   |
+| #51 | Zhu Su                 | CCNU                                                            | Completed | No          | 12/10/2017   | Single room   |
+| #52 | Mei Sun                | Jiangsu University                                              | Completed | No          |              | Double room   |
+| #62 | Haiyan Wang            | Beijing Normal University, China                                | Completed | No          |              | Double room   |
+| #28 | Xingang Wang           | Shannxi Normal University                                       | Completed | Yes         | 12/10/2017   | Single room   |
+| #40 | K. Y. Michael Wong     | Hong Kong University of Science and Technology                  | Completed | Yes         | 11/10/2017   | Single room   |
+| #26 | Ye Wu                  | Beijing Normal University                                       | Completed |             |              | Single room   |
+| #33 | Chengyi Xia            | Tianjin University of Technology                                | Completed | Yes         |              | Single room   |
+| #30 | Xin-Jian Xu            | Shanghai University                                             | Completed | Yes         | 12/10/2017   | Single room   |
+| #16 | Aiguo （爱国） Xu (许) | Institute of Applied Physics and Computational Mathematics      | Completed | Yes         |              | Double room   |
+| #32 | Huijie Yang            | University of Shanghai for Science and Technology               | Completed | Yes         |              | Single room   |
+| #43 | Yuho Yokoi             | Graduate School of Engineering, Mie University                  | Completed | No          |              | Single room   |
+| #50 | Hai-Feng Zhang         | Anhui University                                                | Completed |             | 13/10/2017   | Double room   |
+| #31 | Jiqian Zhang           | Anhui Normal University                                         | Completed | Yes         | 12/10/2017   | Double room   |
+| #58 | Jiqian Zhang           | Anhui Normal University                                         | Completed | Yes         | 12/10/2017   | Double room   |
+| #60 | Pei-pei Zhang          | Faculty of Science ,Jiangsu University                          | Completed |             |              | Double room   |
+| #21 | Tao Zhang              | Central China Normal University                                 | Completed |             |              | Single roomp  |
+| #11 | WenJun Zhang           | Central China Normal University                                 | Completed | No          |              | Double room   |
+| #49 | Xin Zhang              | Shanghai Maritime University                                    | Completed | Yes         | 11/10/2017   | Double room   |
+| #55 | Zi-Ke Zhang            | Hangzhou Normal University                                      | Completed | Yes         | 12/09/2017   | Double room   |
+| #12 | Longfeng Zhao          | Boston University                                               | Completed | Yes         |              | Single room   |
+| #36 | Yi Zhao                | Harbin Institute of Technology Shenzhen Graduate School         | Completed | Yes         | 11/10/2017   | Single room   |
+| #39 | Yong Zou               | East China Normal University                                    | Completed | Yes         | 12/10/2017   | Single room   |
