@@ -1,0 +1,1189 @@
+% Created 2017-10-05 四 22:27
+% Intended LaTeX compiler: pdflatex
+\documentclass[oneside,A4paper,12pt]{article}
+\usepackage[slantfont, boldfont]{xeCJK}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage[table]{xcolor}
+
+\pagestyle{fancy}             % do not remove
+
+\usepackage[Lenny]{fncychap}
+\usepackage[figuresright]{rotating}
+\usepackage{capt-of}
+\usepackage{amssymb}
+\usepackage[normalem]{ulem}
+\usepackage{wrapfig}
+\usepackage{grffile}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{geometry}
+\usepackage{xunicode}
+\usepackage{indentfirst}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{listings}
+
+\parindent 2em
+
+\setmainfont{Times New Roman}
+\setsansfont{Helvetica}
+\setmonofont{Courier New}
+
+\setCJKmainfont{SimSun} 
+\setCJKsansfont{Microsoft YaHei} 
+\setCJKmonofont{FZYTK.ttf} 
+
+%如果没有它，会有一些 tex 特殊字符无法正常使用，比如连字符。
+\defaultfontfeatures{Mapping=tex-text}
+
+% 中文断行
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt
+
+% 代码设置
+% \lstset{numbers=left,
+% numberstyle= \tiny,
+% keywordstyle= \color{ blue!70},commentstyle=\color{red!50!green!50!blue!50},
+% frame=shadowbox,
+% breaklines=true,
+% rulesepcolor= \color{ red!20!green!20!blue!20}
+% }
+
+\usepackage[table]{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{xeCJK,fontspec}
+\setmainfont{Times New Roman}
+\setsansfont{Helvetica}
+\setmonofont{Courier New}
+\setCJKmainfont{SimSun}
+\setCJKsansfont{Microsoft YaHei}
+\setCJKmonofont{FZYTK.ttf}
+\linespread{1.4}
+\usepackage{geometry}
+\definecolor{grey}{rgb}{0.9,0.9,0.9} % Colour of the box surrounding the title
+\titleformat{\chapter}[display]{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{10pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{-7pt}{20pt}
+\usepackage{titlesec}
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\usepackage{fouriernc}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\chead{Statistical Physics and Mathematics for Complex Systems $\cdot$ 2017}
+\rhead{}
+\date{}
+\title{SPMCS-2017 Program And Abstracts\\\medskip
+\large 13-15 October 2017 \\  Hampton By Hilton, Pan Long Cheng, Wuhan}
+\hypersetup{
+ pdfauthor={zhangtao},
+ pdftitle={SPMCS-2017 Program And Abstracts},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 25.1.1 (Org mode 9.0.9)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\begin{titlepage} % Suppresses displaying the page number on the title page and the subsequent page counts as page 1
+	
+	\raggedleft % Right align the title page
+	
+	\rule{1pt}{\textheight} % Vertical line
+	\hspace{0.05\textwidth} % Whitespace between the vertical line and title page text
+	\parbox[b]{0.75\textwidth}{ % Paragraph box for holding the title page text, adjust the width to move the title page left or right on the page
+		
+		{\Huge\bfseries A Collection of \\[0.5\baselineskip] \LaTeX ~Templates}\\[2\baselineskip] % Title
+		{\large\textit{A predictable subtitle}}\\[4\baselineskip] % Subtitle or further description
+		{\Large\textsc{gordon freeman}} % Author name, lower case for consistent small caps
+		
+		\vspace{0.5\textheight} % Whitespace between the title block and the publisher
+		
+		{\noindent The Publisher~~\plogo}\\[\baselineskip] % Publisher and logo
+	}
+
+\end{titlepage}
+
+
+\begin{titlepage} % Suppresses headers and footers on the title page
+
+	\centering % Centre everything on the title page
+	
+	\scshape % Use small caps for all text on the title page
+	
+	\vspace*{\baselineskip} % White space at the top of the page
+	
+	%------------------------------------------------
+	%	Title
+	%------------------------------------------------
+	
+	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt} % Thick horizontal rule
+	\rule{\textwidth}{0.4pt} % Thin horizontal rule
+	
+	\vspace{0.75\baselineskip} % Whitespace above the title
+	
+	{\LARGE SPMCS-2017 \\ Program And Abstracts\\} % Title
+	
+	\vspace{0.75\baselineskip} % Whitespace below the title
+	
+	\rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt} % Thin horizontal rule
+	\rule{\textwidth}{1.6pt} % Thick horizontal rule
+	
+	\vspace{2\baselineskip} % Whitespace after the title block
+	
+	%------------------------------------------------
+	%	Subtitle
+	%------------------------------------------------
+	
+	The 5th International Workshop on Statistical Physics and Mathematics for Complex Systems % Subtitle or further description
+	
+	\vspace*{3\baselineskip} % Whitespace under the subtitle
+	
+	%------------------------------------------------
+	%	Editor(s)
+	%------------------------------------------------
+	
+	
+	\vspace{0.5\baselineskip} % Whitespace before the editors
+	
+        13-15 October 2017 \\  Hampton By Hilton, Pan Long Cheng, Wuhan
+	
+	\vspace{1.4\baselineskip} % Whitespace below the editor list
+	
+	%\textit{Central China Normal University \\ Wuhan, China} % Editor affiliation
+	
+	\vfill % Whitespace between editor names and publisher logo
+	
+	%------------------------------------------------
+	%	Publisher
+	%------------------------------------------------
+	
+	%\plogo % Publisher logo
+	
+	\vspace{0.3\baselineskip} % Whitespace under the publisher logo
+	
+	%2017 % Publication year
+	
+	\textit{Central China Normal University \\ Wuhan, China \\} % Editor affiliation
+        \vspace{0.2\baselineskip}
+	{\large 2017} % Publisher
+
+\end{titlepage}
+\newpage
+
+\begin{titlepage} % Suppresses displaying the page number on the title page and the subsequent page counts as page 1
+	
+	%------------------------------------------------
+	%	Grey title box
+	%------------------------------------------------
+	
+      %\vspace{0.7cm}
+	\colorbox{grey}{
+		\parbox[t]{0.93\textwidth}{ % Outer full width box
+			\parbox[t]{0.91\textwidth}{ % Inner box for inner right text margin
+				\raggedleft % Right align the text
+				\fontsize{50pt}{80pt}\selectfont % Title font size, the first argument is the font size and the second is the line spacing, adjust depending on title length
+				\vspace{0.7cm} % Space between the start of the title and the top of the grey box
+				
+				Part \uppercase\expandafter{\romannumeral 1}\\
+				Introduce\\
+				
+				\vspace{0.7cm} % Space between the end of the title and the bottom of the grey box
+			}
+		}
+	}
+	
+	\vfill % Space between the title box and author information
+	
+	%------------------------------------------------
+	%	Author name and information
+	%------------------------------------------------
+	
+	%\parbox[t]{0.93\textwidth}{ % Box to inset this section slightly
+	%	\raggedleft % Right align the text
+	%	\large % Increase the font size
+	%	{\Large B.J. Blazkowicz}\\[4pt] % Extra space after name
+	%	Department Name\\
+	%	Institution Name\\[4pt] % Extra space before URL
+	%	\texttt{LaTeXTemplates.com}\\
+	%	
+	%	\hfill\rule{0.2\linewidth}{1pt}% Horizontal line, first argument width, second thickness
+	%}
+	
+\end{titlepage}
+
+\section*{Aims And Scope}
+\label{sec:orge6d15c2}
+\begin{flushleft}
+The 5th International Workshop on Statistical Physics and Mathematics for Complex Systems (SPMCS 2017) will be held at Hotel Hampton by Hilton Wuhan Pan Long Cheng, Wuhan, China on October 12-15, 2017. The workshop will be co-organized by Central China Normal University (CCNU) of China and YNCRÉA of France.
+
+The SPMCS international workshop series (2008 Le Mans, 2010 Wuhan, 2012 Kazan, and 2014 Yichang) is destined mainly to communicate and exchange research results and information on the fundamental challenges and questions in the vanguard of statistical physics, thermodynamics and mathematics for complex systems. Moreover, since statistical physics has influenced network science in a profound way over the years, this workshop will also bring together worldwide experts and young scientists working on areas related to complex networks.
+
+The SPMCS 2017 workshop will consist of invited plenary talks, contributed parallel talks and poster presentations. Topics to be covered but not limited to:
+
+\linebreak
+
+- Fundamental aspects in the application of statistical physics and thermodynamics to complex systems and their modeling         \newline
+- Finite-size and nonextensive systems                                                                                           \newline
+- Fluctuation theorems and equalities, quantum thermodynamics                                                                    \newline
+- Variational principle and optimization methods for random dynamics                                                             \newline
+- Social, economical, biological and technological network structure and dynamic processes                                       \newline
+- Equilibrium and non-equilibrium phase transitions                                                                              \newline
+- Temporal network and multi-layer network                                                                                       \newline
+- Dynamic processes on complex networks                                                                                          \newline
+- Metaphysics and philosophical reflection on the foundation of physics in general 
+
+\end{flushleft}
+
+\newpage
+
+\section*{Scientific Advisory Committee}
+\label{sec:org523411c}
+\begin{flushleft}
+ Abe Sumiyoshi (Mie University                                        Japan)                       \newline
+ Allahverdyan Armen (Yerevan Physics Institute                        Armenia)                     \newline
+ Bagci G.B. (TOBB University of Economics and Technology              Turkey)                      \newline
+ Beck Christian (University of London                                 UK)                          \newline
+ Benoit Robyns (University of Lille Nord of France                    France)                      \newline
+ Biro Tamas Sandor (MTA Wigner Research Centre for Physics            Hungary)                     \newline
+ Cai Xu (Central China Normal University                              China)                       \newline
+ Chen Jincan (Xiamen University                                       China)                       \newline
+ Dionisio Andreia (University of Évora                                Portugal)                    \newline
+ Gell-Mann Murray (Santa Fe Institute                                 USA)                         \newline
+ Haubold Hans (United Nations Organization                            Austria)                     \newline
+ Kaniadakis Giorgio (Polytechnic University of Turin                  Italy)                       \newline
+ Li Wei (Central China Normal University                              China)                       \newline
+ Long Guilu (Tsinghua University                                      China)                       \newline
+ Lucia Umberto (Politecnico di Torino                                 Italy)                       \newline
+ Makarenko Alexander (National Technical University of Ukraine "KPI"  Ukrain)                      \newline
+ Mathai A.M. (McGill University and Director                          India)                       \newline
+ Menezes Rui (ISCTE – Lisbon University                               Portugal)                    \newline
+ Nieuwenhuizen Theo (University of Amsterdam                          Netherland)                  \newline
+ Quarati Piero (Polytechnic University of Turin                       Italy)                       \newline
+ Parvan A.S. (Moldova Academy of Sciences                             Moldova)                     \newline
+ Paul Bourgine (French National Centre for Scientific Research        France)                      \newline
+ Perrier Edith (Laboratory of Information Application                 Orstom        Bondy  France) \newline
+ Podlubni Igor (Technical University of Kosice                        Slovakia)                    \newline
+ Rapisarda Andrea (University of Catania                              Italy)                       \newline
+ Robledo Alberto (National Autonomous University of Mexico            Mexico)                      \newline
+ Rui Menezes (ISCTE – Lisbon University Institute                     Portugal)                    \newline
+ Struzik Zbigniew (The University of Tokyo                            Japan)                       \newline
+ Thurner Stefan (Medical University of Vienna                         Austria)                     \newline
+ Tirnakli Ugur (Ege University                                        Turkey)                      \newline
+ Vakarin Eduard (Pierre and Marie Curie University                    France)                      \newline
+ Wang Binghong (University of Science and Technology of China         China)                       \newline
+ Zhang Yicheng (University of Fribourg                                Switzerland)                 \newline
+
+\end{flushleft}
+
+\section*{Organizing Committee}
+\label{sec:orgacfca9c}
+
+\begin{flushleft}
+ Li          Wei (Central China Normal University                    China)  \newline
+ Wang        Qiuping A. (YNCRÉA                                      France) \newline
+ Abe         Sumiyoshi (Mie University                               Japan)  \newline
+ Kaniadakis  Giorgio (Politecnico di Torino                          Italy)  \newline
+ Robledo     Alberto (National Autonomous University of Mexico       Mexico) \newline
+ Wang        Binghong (University of Science and Technology of China China)  \newline
+ Robyns      Benoît (YNCRÉA                                          France) \newline
+ Chi         Liping (Central China Normal University                 China)  \newline
+ Biela       Philippe (YNCRÉA                                        France) \newline
+ Cai         Xu (Central China Normal University                      China) \newline
+\end{flushleft}
+
+
+\newpage
+
+
+
+\begin{titlepage} % Suppresses displaying the page number on the title page and the subsequent page counts as page 1
+	
+	%------------------------------------------------
+	%	Grey title box
+	%------------------------------------------------
+	
+      %\vspace{0.7cm}
+	\colorbox{grey}{
+		\parbox[t]{0.93\textwidth}{ % Outer full width box
+			\parbox[t]{0.91\textwidth}{ % Inner box for inner right text margin
+				\raggedleft % Right align the text
+				\fontsize{50pt}{80pt}\selectfont % Title font size, the first argument is the font size and the second is the line spacing, adjust depending on title length
+				\vspace{0.7cm} % Space between the start of the title and the top of the grey box
+				
+				Part \uppercase\expandafter{\romannumeral 2}\\
+				Program\\
+				
+				\vspace{0.7cm} % Space between the end of the title and the bottom of the grey box
+			}
+		}
+	}
+	
+	\vfill % Space between the title box and author information
+	
+	%------------------------------------------------
+	%	Author name and information
+	%------------------------------------------------
+	
+	%\parbox[t]{0.93\textwidth}{ % Box to inset this section slightly
+	%	\raggedleft % Right align the text
+	%	\large % Increase the font size
+	%	{\Large B.J. Blazkowicz}\\[4pt] % Extra space after name
+	%	Department Name\\
+	%	Institution Name\\[4pt] % Extra space before URL
+	%	\texttt{LaTeXTemplates.com}\\
+	%	
+	%	\hfill\rule{0.2\linewidth}{1pt}% Horizontal line, first argument width, second thickness
+	}
+	
+\end{titlepage}
+
+
+\section*{October 13th}
+\label{sec:org865c6a3}
+
+\subsection*{Chair: Wei Li}
+\label{sec:org60e80a9}
+\begin{center}
+\begin{tabular}{p{2.5cm}p{7.5cm}p{6.5cm}}
+\toprule
+\cellcolor{green!25}  8:00-8:10 & \cellcolor{green!25} Xu Cai And Qiuping Alexandre Wang & \cellcolor{green!25} Welcome address\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection*{Session \uppercase\expandafter{\romannumeral 1}  \hspace{10mm} Chair: Binghong Wang}
+\label{sec:orge9b3873}
+\begin{center}
+\begin{tabular}{p{2.5cm}p{4.8cm}p{7.5cm}}
+\toprule
+8:10-8:40 & K.Y. Michael Wong & How neural systems fuse information from different channels\\
+8:40-9:10 & Sumiyoshi Abe & C-MaxEnt and Bayesian approach to extreme values\\
+9:10-9:40 & Zhigang Zheng & Interface facilitated energy transport in coupled nonlinear lattices\\
+\cellcolor{blue!25}9:40-10:00 & \cellcolor{blue!25}\textbf{Photo and coffee break} & \cellcolor{blue!25}\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+
+\subsection*{Session \uppercase\expandafter{\romannumeral 2}  \hspace{10mm} Chair: Sumiyoshi Abe}
+\label{sec:org38a703a}
+
+
+\begin{center}
+\begin{tabular}{p{2.5cm}p{4.5cm}p{8.5cm}}
+\toprule
+10:00-10:30 & Aiguo Xu & Discrete Boltzmann modeling of non-equilibrium complex flows\\
+10:30-11:00 & Alberto Robledo & An unorthodox thermal system analogue of the onset of chaos\\
+11:00-11:30 & Jiping Huang & Macroscopic network of thermal conduction\\
+11:30-12:00 & Liang Huang & Symmetry blockade and route to equipartition in square graphene resonators\\
+12:00-12:30 & Qiuping Alexandre Wang & Is this a true least action principle for damped motion?\\
+\cellcolor{blue!25}12:30-14:00 & \cellcolor{blue!25}\textbf{Lunch break} & \cellcolor{blue!25}\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+
+\subsection*{Session \uppercase\expandafter{\romannumeral 3}  \hspace{10mm} Chair: Alberto Robledo}
+\label{sec:org1ffa554}
+
+\begin{center}
+\begin{tabular}{p{2.5cm}p{4cm}p{8.5cm}}
+\toprule
+14:00-14:30 & Chin-Kun Hu & Universality and scaling in human and social systems\\
+14:30-15:00 & Armen Allahverdyan & Modeling phoneme distribution: the effect of author-dependence\\
+15:00-15:30 & Pan-Jun Kim & Systems approach to complex human microbial networks\\
+15:30-16:00 & Jinshan Wu & What is scientometrics from the perspective of network science and data science\\
+\cellcolor{blue!25}16:00-16:20 & \cellcolor{blue!25}\textbf{Coffee break} & \cellcolor{blue!25}\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection*{Session \uppercase\expandafter{\romannumeral 4}  \hspace{5mm} Chair: K.Y. Michael Wong}
+\label{sec:orgedf94f1}
+
+\begin{center}
+\begin{tabular}{p{2.5cm}p{4cm}p{8.5cm}}
+\toprule
+16:20-16:50 & Xingang Wang & Synchronous patterns in complex networks\\
+16:50-17:20 & Yanwu Wang & Collective behavior of networked systems\\
+17:20-17:50 & Xinjian Xu & Information propagation in directed networks\\
+17:50-18:20 & Jianguo Liu & Modelling and application of online user collective behaviors\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+
+
+
+\section*{October 14th}
+\label{sec:orgbc06a13}
+
+\subsection*{Session \uppercase\expandafter{\romannumeral 1}  \hspace{10mm} Chair: Aiguo Xu}
+\label{sec:orgc1a1496}
+
+\begin{center}
+\begin{tabular}{p{2.5cm}p{4cm}p{8.5cm}}
+\toprule
+8:00-8:30 & Changsong Zhou & Complex neural connectivity and activity: perspective from cost-efficiency trade-off\\
+8:30-9:00 & Jiqian Zhang & New nonlinear dopant kinetic model of memristor\\
+9:00-9:30 & Dingding Han & Gibrat fluctuation and optimal navigation of the time-varying complex systems\\
+9:30-10:00 & Ying Fan & Random walk on signed network\\
+\cellcolor{blue!25}10:00-10:30 & \cellcolor{blue!25}\textbf{Coffee break} & \cellcolor{blue!25}\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+
+\subsection*{Session \uppercase\expandafter{\romannumeral 2}  \hspace{10mm} Chair: Changsong Zhou}
+\label{sec:orgafcad76}
+
+
+\begin{center}
+\begin{tabular}{p{2.5cm}p{4cm}p{8.5cm}}
+\toprule
+10:30-11:00 & Huijie Yang & Visibility graphlet approach to time series\\
+11:00-11:30 & Yi Zhao & Progress on equivalent transformation and reciprocal characterization between complex networks and time series\\
+11:30-12:00 & Jin Zhou & Dynamics of complex network: from monoplex to multiplex\\
+12:00-12:30 & Zike Zhang & Machine learning on complex networks\\
+\cellcolor{blue!25}12:30-14:00 & \cellcolor{blue!25}\textbf{Lunch break} & \cellcolor{blue!25}\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+
+
+
+\subsection*{Session \uppercase\expandafter{\romannumeral 3} \hspace{10mm} Sub-session A \hspace{10mm} Chair: Ying Fan}
+\label{sec:orgf168369}
+
+\begin{center}
+\begin{tabular}{p{2.5cm}p{4cm}p{8.5cm}}
+\toprule
+14:00-14:25 & Pan Zhang & Mean-field-based spectral methods for unsupervised learning\\
+14:25-14:50 & Congjie Ou & Exotic properties of quantum heat engine including the energy-conservation process\\
+14:50-15:15 & Chunyang Wang & Anomalous statistical behaviours resulted from fractional damping\\
+15:15-15:40 & Liang Luo & Quenched or annealed: a criterion for non-gaussian diffusion\\
+\cellcolor{blue!25}15:40-16:00 & \cellcolor{blue!25}\textbf{Coffee break} & \cellcolor{blue!25}\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+
+\subsection*{Session \uppercase\expandafter{\romannumeral 3} \hspace{10mm} Sub-session B \hspace{10mm} Chair: Liang Huang}
+\label{sec:org858d690}
+
+\begin{center}
+\begin{tabular}{p{2.5cm}p{4cm}p{8.5cm}}
+\toprule
+14:00-14:25 & Yong Zou & Explosive phenomena in complex networks\\
+14:25-14:50 & Jie Liu & Mutual representation between nonlinear time series and complex network graphs and its applications\\
+14:50-15:15 & Xiaofan Liu & Analysis and modeling of the adaptive coevolution in heterogeneous double-layer networks\\
+15:15-15:40 & Xin Zhang & Risk contagion analysis based on a complex credit network model\\
+\cellcolor{blue!25}15:40-16:00 & \cellcolor{blue!25}\textbf{Coffee break} & \cellcolor{blue!25}\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+
+\subsection*{Session \uppercase\expandafter{\romannumeral 4} \hspace{10mm} Sub-session A \hspace{10mm} Chair: Jiping Huang}
+\label{sec:org2968485}
+
+\begin{center}
+\begin{tabular}{p{2.5cm}p{4cm}p{8.5cm}}
+\toprule
+16:00-16:25 & Zigang Huang & Emergence and control of collective behavior in resource-allocation systems\\
+16:25-16:50 & Zhifu Huang & TBA\\
+16:50-17:15 & Shengfeng Deng & Spreading dynamics of forget-remember mechanism\\
+\cellcolor{blue!25}18:30 & \cellcolor{blue!25} \textbf{Banquet} & \cellcolor{blue!25}\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+
+\subsection*{Session \uppercase\expandafter{\romannumeral 4} \hspace{10mm} Sub-session B \hspace{10mm} Chair: Xingang Wang}
+\label{sec:org1b8d6c1}
+
+\begin{center}
+\begin{tabular}{p{2.5cm}p{4cm}p{8.5cm}}
+\toprule
+16:00-16:25 & Changgui Gu & Strengthen the circadian rhythms\\
+16:25-16:50 & Ye Wu & Evidence and modeling for heavy-tail phenomena in man-made systems\\
+16:50-17:15 & Yunfeng Chang & The way to uncover community structure with core and diversity\\
+17:15-17:40 & Longfeng  Zhao & Stock market as temporal network\\
+\cellcolor{blue!25}18:30 & \cellcolor{blue!25}\textbf{Banquet} & \cellcolor{blue!25}\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+
+\section*{October 15th}
+\label{sec:org437dec7}
+
+\subsection*{Session \uppercase\expandafter{\romannumeral 1}  \hspace{10mm} Chair: Zhigang Zheng}
+\label{sec:org1a35356}
+
+\begin{center}
+\begin{tabular}{p{2.5cm}p{4cm}p{8.5cm}}
+\toprule
+8:00-8:30 & Binghong Wang & Recent research progress on controllability transition in complex networks\\
+8:30-9:00 & Tao Jia & Degree correlation induce bimodality in controlling complex networks\\
+9:00-9:30 & Rui Menezes & Hysteresis and duration dependence of financial crises in the US: evidence from 1871-2016\\
+9:30-10:00 & Mauricio Pato & Statistical distribution of the length of words\\
+\cellcolor{blue!25}10:00-10:20 & \cellcolor{blue!25}\textbf{Coffee break} & \cellcolor{blue!25}\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection*{Session \uppercase\expandafter{\romannumeral 2}  \hspace{10mm} Chair: Xinjian Xu}
+\label{sec:orgdf43cf2}
+
+\begin{center}
+\begin{tabular}{p{2.5cm}p{4cm}p{8.5cm}}
+\toprule
+10:20-10:50 & Chenping Zhu & Universal patterns behind big data of passenger flight departure delays in United States\\
+10:50-11:20 & Wenlian Lu & Some progresses in modeling, analysis and application of interdependent complex networks\\
+11:20-11:50 & Haifeng Zhang & Reconstructing complex networks from discrete time series\\
+11:50-12:20 & Chengyi Xia & Attack vulnerability and epidemic dynamics on two interdependent networks\\
+12:20-12:50 & Zhihong Guan & Hybrid dynamics of complex biological networks\\
+\cellcolor{red!25}12:50-13:00 & \cellcolor{red!25}\textbf{Closing remark} & \cellcolor{red!25}\\
+13:30 & Excursion & \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+
+
+\newpage
+
+
+
+\begin{titlepage} % Suppresses displaying the page number on the title page and the subsequent page counts as page 1
+	
+	%------------------------------------------------
+	%	Grey title box
+	%------------------------------------------------
+	
+      %\vspace{0.7cm}
+	\colorbox{grey}{
+		\parbox[t]{0.93\textwidth}{ % Outer full width box
+			\parbox[t]{0.91\textwidth}{ % Inner box for inner right text margin
+				\raggedleft % Right align the text
+				\fontsize{50pt}{80pt}\selectfont % Title font size, the first argument is the font size and the second is the line spacing, adjust depending on title length
+				\vspace{0.7cm} % Space between the start of the title and the top of the grey box
+				
+				Part \uppercase\expandafter{\romannumeral 3}\\
+				Abstracts\\
+				
+				\vspace{0.7cm} % Space between the end of the title and the bottom of the grey box
+			}
+		}
+	}
+	
+	\vfill % Space between the title box and author information
+	
+	%------------------------------------------------
+	%	Author name and information
+	%------------------------------------------------
+	
+	%\parbox[t]{0.93\textwidth}{ % Box to inset this section slightly
+	%	\raggedleft % Right align the text
+	%	\large % Increase the font size
+	%	{\Large B.J. Blazkowicz}\\[4pt] % Extra space after name
+	%	Department Name\\
+	%	Institution Name\\[4pt] % Extra space before URL
+	%	\texttt{LaTeXTemplates.com}\\
+	%	
+	%	\hfill\rule{0.2\linewidth}{1pt}% Horizontal line, first argument width, second thickness
+	%}
+	
+\end{titlepage}
+
+
+\section*{October 13th}
+\label{sec:org7bdd1e5}
+\subsection*{Session \uppercase\expandafter{\romannumeral 1}  \hspace{10mm} Chair: Binghong Wang}
+\label{sec:orgc1fc46f}
+
+\begin{longtable}{lp{14cm}}
+\toprule
+\textbf{Title} & How neural systems fuse information from different channels\\
+\textbf{Name} & K.Y. Michael Wong\\
+\textbf{Affiliation} & Hong Kong University of Science and Technology\\
+\textbf{Email} & phkywong@ust.hk\\
+\textbf{Abstract} & Neural systems gather information from different channels resulting in enhanced reliability. The optimal estimate is given by Bayes' rule, and remarkably the brain can achieve this optimum. It is therefore interesting to consider the neural architecture and mechanism underlying this feat. We study a decentralized network architecture where same-channel and cross-channel information are processed in parallel. Using stochastic gradient descent, projections to basis functions, and a perturbative approach in the limit of weak correlation, the most striking discovery is that the direct and indirect cross-channel pathways are opposite to each other -- an apparently redundant architecture.\\
+\bottomrule
+\end{longtable}
+
+\newpage
+
+\begin{longtable}{lp{14cm}}
+\toprule
+\textbf{Title} & C-MaxEnt and Bayesian approach to extreme values\\
+\textbf{Name} & Sumiyoshi Abe\\
+\textbf{Affiliation} & Mie University, Japan\\
+\textbf{Email} & suabe@sf6.so-net.ne.jp\\
+\textbf{Abstract} & The nature of a complex system can often be dominated by rare events. Examples include seismicity, floods, and stock markets, where extreme-value statistics may play an important role. Since big data are, in general, not available for rare events, the Bayesian approach is necessarily attractive. Here, a succinct explanation is given about the recently proposed method for selecting priors in the Bayesian approach, which is referred to as the conditional maximum entropy method (C-MaxEnt). This method is developed in analogy with statistical mechanics of a system whose dynamics contains largely separated two or more time scales. It is shown how C-MaxEnt enables one to systematically calculate non-informative priors for extreme-value statistics.\\
+\bottomrule
+\end{longtable}
+
+\newpage
+
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Interface facilitated energy transport in coupled nonlinear lattices\\
+\textbf{Name} & Zhigang Zheng\\
+\textbf{Affiliation} & Huaqiao University\\
+\textbf{Email} & zgzheng@hqu.edu.cn\\
+\textbf{Abstract} & It is generally expected that the interface coupling leads to the suppression of thermal transport through coupled nanostructures due to the additional interface phonon-phonon scattering. However, recent experiments demonstrated that the interface van der Waals interactions can significantly enhance the thermal transfer of bonding boron nanoribbons compared to a single freestanding nanoribbon. To obtain a more indepth understanding on the important role of the nonlinear interface coupling in the heat transports, we explore the effect of nonlinearity in the interface interaction on the phonon transport by studying the coupled one-dimensional (1D) Frenkel-Kontorova lattices. It is found that thermal conductivity increases with increasing interface nonlinear intensity for weak interchain nonlinearity. By developing the effective phonon theory of coupled systems, we calculate the dependence of heat conductivity on interfacial nonlinearity in weak interchain couplings regime which is qualitatively in good agreement with the result obtained from molecular dynamics simulations. Moreover, we demonstrate that, with increasing interface nonlinear intensity, the system dimensionless nonlinearity strength is reduced, which in turn gives rise to the enhancement of thermal conductivity. Our results pave the way for manipulating the energy transport through coupled nanostructures for future emerging applications.\\
+\bottomrule
+\end{longtable}
+
+\newpage
+
+\subsection*{Session \uppercase\expandafter{\romannumeral 2}  \hspace{10mm} Chair: Sumiyoshi Abe}
+\label{sec:org7e3a858}
+
+
+
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Discrete Boltzmann modeling of non-equilibrium complex flows\\
+\textbf{Name} & Aiguo Xu\\
+\textbf{Affiliation} & Institute of Applied Physics and Computational Mathematics\\
+\textbf{Email} & Xu \_ Aiguo@iapcm.ac.cn\\
+\textbf{Abstract} & In this talk, we will briefly review the progress of discrete Boltzmann modeling, simulation and analysis of complex flows in our group in recent years. The topics are relevant to multiphase flows, non-equilibrium phase transition, shock wave, combustion and hydrodynamic instability. Mathematically, the only difference of discrete Boltzmann from the traditional hydrodynamic modeling is that the NS equations are replaced by a discrete Boltzmann equation. But physically, this replacement has a meaningful gain: the discrete Boltzmann model (DBM) can work as a hydrodynamic model supplemented by a coarse-grained model of the Thermodynamic Non-Equilibrium (TNE) effects, where the hydrodynamic model can be the Navier-Stokes(NS) and can also beyond the NS. The observations on TNE have been used to access more precisely the specific aspects of TNE, to estimate more quantitatively the deviation amplitude from thermodynamic equilibrium state, to recover the main feature of real distribution function, to obtain more accurate viscous stress and heat flux for hydrodynamic modeling, to investigate various mechanisms resulting in entropy increase, to distinguish different stages of non-equilibrium phase transition, to discriminate and capture various interfaces, to differentiate shock waves in plasma from those in common fluids, etc.\\
+\bottomrule
+\end{longtable}
+
+\newpage
+
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & An unorthodox thermal system analogue of the onset of chaos\\
+\textbf{Name} & Alberto Robledo\\
+\textbf{Affiliation} & Instituto de Física, Universidad Nacional Autónoma de México\\
+\textbf{Email} & robledo@fisica.unam.mx\\
+\textbf{Abstract} & We systematically eliminate access to configurations of an otherwise elementary thermal system model until only remains a subset of them of vanishing measure. The thermal system consists of 2N distinguishable non-interacting degrees of freedom, each occupying energy levels of the form u\(_{\text{j,k}}\) = 2\(^{\text{j}}\) 2\(^{\text{2k}}\), j,k = 0,1,2,\ldots{} The system's configurations are eliminated when their energies do not match the form 2\(^{\text{N}}\)-l, l=0,1,2,\ldots{}, leading to a discrete scale invariant set of available configurations as N approaches infinity. In doing this we achieve the following results: 1) The constrained thermal system becomes an analogue of the dynamics towards the multifractal attractor at the period-doubling onset of chaos. 2) The statistical-mechanical properties of the thermal system depart from those of the ordinary Boltzmann-Gibbs (BG) form and acquire features from q-statistics. 3) Redefinition of energy levels as logarithms of the original ones recovers the BG scheme and the free energy Legendre transform property. We demonstrate that q-entropy expressions apply naturally to statistical–mechanical systems that experience an exceptional contraction of their configuration space. We illustrate this circumstance for properties of systems that find descriptions in terms of nonlinear maps. These are size-rank functions, urbanization and similar processes, and settings where frequency locking takes place.\\
+\bottomrule
+\end{longtable}
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Macroscopic network of thermal conduction\\
+\textbf{Name} & Jiping Huang\\
+\textbf{Affiliation} & Fudan University\\
+\textbf{Email} & jphuang@fudan.edu.cn\\
+\textbf{Abstract} & We propose a class of macroscopic networks of thermal conduction, whose phase transition phenomena (variation tendency) can not be explained simultaneously by existing theories of networks, percolation or effective media. We report the bond-free property of these networks and the associated three switching processes caused by the geometric property of bonds, and we reveal the effect of single-point connection. Also, we propose some potential applications including thermal diodes. Our results are confirmed in simulation and experiment. This work offers different insights into the theories of networks, percolation and effective media.\\
+\bottomrule
+\end{longtable}
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Symmetry blockade and route to equipartition in square graphene resonators\\
+\textbf{Name} & Liang Huang\\
+\textbf{Affiliation} & Lanzhou University\\
+\textbf{Email} & huangl@lzu.edu.cn\\
+\textbf{Abstract} & Flexural modes are critical to heat conductivity and mechanical vibration of two dimensional materials such as graphene. Much effort has been devoted to understanding the underlying mechanism. In this paper, we examine solely the out-of-plane flexural modes and identify their energy flow pathway during equipartition process. The key is the development of a universal scheme that numerically characterizes the strength of nonlinear interactions between normal modes. In particular, the modes are grouped into four classes by their distinct symmetries. The couplings are significantly larger within a group than between groups, forming symmetry blockades. As a result, the energy first flows to the modes in the same symmetry class. Breakdown of the symmetry blockade, i.e., inter-class energy flow, starts either due to the Mathieu instability or when inter-class couplings become strong, in small and large initial energy cases, respectively. The equipartition time follows the stretched exponential law, and survives in the thermodynamic limit. These results bring fundamental understandings to the Fermi-Pasta-Ulam problem in two dimensional systems with complex potentials, and reveal clearly the physical picture of dynamical interactions between the flexural modes, which will be crucial to the understanding of their abnormal contribution to heat conduction and nonlinear mechanical vibrations.\\
+\bottomrule
+\end{longtable}
+
+\newpage
+
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Is this a true least action principle for damped motion ?\\
+\textbf{Name} & Alexandre Qiuping Wang\\
+\textbf{Affiliation} & Yncrea\\
+\textbf{Email} & Alexandre.wang@yncrea.fr\\
+\textbf{Abstract} & This work is a formulation of the least action principle for classical mechanical dissipative systems. We consider a whole conservative system composed of a damped moving body and its environment receiving the dissipated energy. This composite system has a conservative Hamiltonian \(H=K_1+V_1+H_2\) where \(K_1\) is the kinetic energy of the moving body, \(V_1\) its potential energy and \(H_2\) the energy of the environment. The Lagrangian is found to be \(L=K_1-V_1-E_d\) where \(E_d\) is the energy dissipated from the moving body into the environment. The usual variation calculus of least action leads to the correct equation of the damped motion\\
+\bottomrule
+\end{longtable}
+
+\newpage
+
+\subsection*{Session \uppercase\expandafter{\romannumeral 3}  \hspace{10mm} Chair: Alberto Robledo}
+\label{sec:orge5da119}
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Universality and scaling in human and social systems\\
+\textbf{Name} & Chin-Kun Hu\\
+\textbf{Affiliation} & Institute of Physics of Academia Sinica\\
+\textbf{Email} & huck@phys.sinica.edu.tw\\
+\textbf{Abstract} & The objective of statistical physics is to understand macroscopic behavior of a many-body system from the interactions of the constituents of that system. When many-body systems reach critical states, simple universal and scaling behaviors appear. In this talk, I first introduce the concepts of universality and scaling in critical physical systems [1-4], I then briefly review some examples of universal and scaling behaviors in human and social systems, e.g. Universality and scaling in the statistical data of literary works [5], universal crossover behavior of stock returns [6], universal trend in the evolution of Chinese characters [7], etc. Finally, I mention some interesting problems for further studies.\\
+\bottomrule
+\end{longtable}
+
+
+\newpage
+
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Modeling phoneme distribution: the effect of author-dependence\\
+\textbf{Name} & Armen Allahverdyan\\
+\textbf{Affiliation} & Yerevan Physics Institute\\
+\textbf{Email} & rmen.allahverdyan@gmail.com\\
+\textbf{Abstract} & We study rank-frequency relations for phonemes, the minimal units that still relate to linguistic meaning. We show that these relations can be described by the Dirichlet distribution, a direct analogue of the ideal-gas model in statistical mechanics. This description allows us to demonstrate that the rank-frequency relations for phonemes of a text do depend on its author. The author-dependency effect is not caused by the author’s vocabulary (common words used in different texts), and is confirmed by several alternative means. This suggests that it can be directly related to phonemes. These features contrast to rank-frequency relations for words, which are both author and text independent and are governed by the Zipf’s law.\\
+\bottomrule
+\end{longtable}
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Systems approach to complex human microbial networks\\
+\textbf{Name} & Pan-Jun Kim\\
+\textbf{Affiliation} & Korea Advanced Institute of Science and Technology\\
+\textbf{Email} & pjkim@apctp.org\\
+\textbf{Abstract} & Our resident gut microbial community, or gut microbiome, provides us with a variety of biochemical capabilities not encoded in our genes. This human gut microbiome is linked not only to our health, but also to various disorders such as obesity, cancer, and diabetes. We constructed the literature-curated global interaction network of the human gut microbiome mediated by various chemicals. Using our network, we conducted a systematic analysis of the microbiomes in type 2 diabetes patients, and revealed the metabolic infrastructure of the gut ecosystem implicated in disease. Our network framework shows promise for investigating complex microbe-microbe and host-microbe chemical cross-talk, and identifying disease-associated features.\\
+\bottomrule
+\end{longtable}
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & What is scientometrics from the perspective of network science and data science\\
+\textbf{Name} & Jinshan Wu\\
+\textbf{Affiliation} & School of Systems Science, Beijing Normal University\\
+\textbf{Email} & jinshanw@bnu.edu.cn\\
+\textbf{Abstract} & Scientometrics is a study of scientific activities of scientists and records/results of such activities for the purpose of boosting the development of science. It it possible and natural to represent the basic data, typical questions, typical ways of thinking and typical methods of analysis  all in forms of networks. In this work, based on some recent works in this field from others and our own, we will present this powerful, as we believe, point of view of Scientometrics. In doing so, we wish this perspective will help development of both studies of complex systems and also Scientometrics.\\
+\bottomrule
+\end{longtable}
+
+
+\newpage
+\subsection*{Session \uppercase\expandafter{\romannumeral 4}  \hspace{5mm} Chair: K.Y. Michael Wong}
+\label{sec:org62b6c67}
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Synchronous patterns in complex networks\\
+\textbf{Name} & Xingang Wang\\
+\textbf{Affiliation} & Shaanxi Normal University\\
+\textbf{Email} & wangxg@snnu.edu.cn\\
+\textbf{Abstract} & An intriguing phenomenon observed in systems of coupled oscillators is the cluster synchronization. In cluster synchronization, oscillators within the same cluster are highly synchronized, but are not if the oscillators are from different clusters. Previously, cluster synchronization has been studied in systems of regular network structures, and its emergence is attributed to the breaking of the network symmetry. Recently, stimulated by the progress of network science, cluster synchronization in complex networks begins to be interested too. In this talk, we will introduce our recent progresses on the formation of synchronous clusters in complex networks, including 1) how to figure out the cluster synchronization states according to the network symmetries; 2) how to analyze the stability of the cluster synchronization states; and 3) how to control the cluster synchronization states. The studies enrich our understanding on the pattern dynamics of complex networks, and are of implications to the functionality and operation of many realistic systems.\\
+\bottomrule
+\end{longtable}
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Collective behavior of networked systems\\
+\textbf{Name} & Yanwu Wang\\
+\textbf{Affiliation} & Huazhong University of Science and Technology\\
+\textbf{Email} & wangyw@hust.edu.cn\\
+\textbf{Abstract} & Nowadays more and more systems are running in the manner of connecting or interacting with others through networks, which I call networked systems in this talk. Motivated by the benefits the collective behavior of animals in nature brings, networked systems are usually designed on purpose to achieve certain collective behavior to fulfill certain duties. \newline In this talk, three types of collective behavior of networked systems will be presented, i.e., multi-synchronization, formation, and formation-containment. Firstly, I will introduce the concept of multi-synchronization, of which the synchronization manifold depends on the initial values of the systems. By employing the impulsive control strategy, the networked nonlinear systems can achieve multi-synchronization if the systems contain multiple equilibrium states. Secondly, I will propose a hierarchical control framework for networked heterogeneous linear systems and investigate the output formation when the network is switching among certain number of disconnected sub-networks and some of the system states information is unavailable. Thirdly, I will present the output formation-containment problem of networked heterogeneous linear systems, in which the communications between systems are intermittent. The talk will conclude with discussion of future opportunities for networked systems.\\
+\bottomrule
+\end{longtable}
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Information propagation in directed networks\\
+\textbf{Name} & Xinjian Xu\\
+\textbf{Affiliation} & Shanghai University\\
+\textbf{Email} & xinjxu@shu.edu.cn\\
+\textbf{Abstract} & The investigation of structure and dynamics of complex networks has attracted contributions from applied mathematicians and statistical physicists over the last several decades. Of high interest is a broad range of dynamical processes unfolding over underline networks, e.g., information propagation. The threshold model has been widely adopted as a classic model for studying such contagion processes on social networks. Previous studies, however, have paid less attention on sddirected properties of nodes or links. In this paper, a modified threshold model on directed networks has been proposed and studied by Monte-Carlo simulations. Two regimes of the underline networks are identified in which the system exhibits distinct behaviors.\\
+\bottomrule
+\end{longtable}
+
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Modelling and application of online user collective\\
+\textbf{Name} & Jianguo Liu\\
+\textbf{Affiliation} & Shanghai University of Finance and Economics\\
+\textbf{Email} & liujg004@ustc.edu.cn\\
+\textbf{Abstract} & Understanding the evolution characteristics of social relations is significant to identify important people who is linked by strong social ties in online social networks (OSNs). In this paper, we empirically investigate the evolution characteristics of Facebook and Wiki users' \emph{social signature}, capturing the distribution of frequency of interactions between different alters over time in ego network. The statistical results show that there are robust social signatures for collective egos based on interactions. Notably, individual social signature remains stable, no matter how alters change over time. Furthermore, we use structure information of OSNs to analyze the social closeness in each interval in terms of embeddedness measurement, presenting that alters identified from structural information still show the characteristic of social signature. Moreover, the embeddedness could predict at least average 33.47\% alters and at most average 66.90\% alters. This work enables an effective method for identifying potential highly-related friends based on the regularity of social signature in online social network.\\
+\bottomrule
+\end{longtable}
+
+\newpage
+
+\section*{October 14th}
+\label{sec:orgf2f358a}
+
+\subsection*{Session \uppercase\expandafter{\romannumeral 1}  \hspace{10mm} Chair: Aiguo Xu}
+\label{sec:orgab7face}
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Complex neural connectivity and activity: perspective from cost-efficiency trade-off\\
+\textbf{Name} & Changsong Zhou\\
+\textbf{Affiliation} & Hong Kong Baptist University\\
+\textbf{Email} & cszhou@hkbu.edu.hk\\
+\textbf{Abstract} & We are interested in understanding neural systems as functional, complex dynamical networks. In this talk I will emphasize that the formation of the complex network architecture and dynamical activity of neural systems is subject to multiple structural and functional constraints and the perspective of cost-efficiency trade-off could provide a framework to better understand various salient features in neural connectivity and activity, and likely also suggest a novel angle to study the inherent vulnerability in brain networks which could be closely related to various neurodegenerative diseases.\\
+\bottomrule
+\end{longtable}
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & New nonlinear dopant kinetic model of memristor\\
+\textbf{Name} & Jiqian Zhang\\
+\textbf{Affiliation} & Anhui Normal University\\
+\textbf{Email} & zhangcdc@ahnu.edu.cn\\
+\textbf{Abstract} & To further optimize the drift model of memristor, in this paper, based on both the existing nonlinear doping dynamics model and sinusoidal function, a new model is proposed, which agrees with the five criteria for describing the migration characteristics of nonlinear dopant. Secondly, to improve the flexibility of the new model, two internal parameters are introduced, and it is verified by using the coupling variable resistor model proposed by HP team. The simulation results show that the model is well matched with the authoritative model. At the same time, the new model can also effectively avoid the "terminal state problem" of the memristor. Furthermore, when the different driving voltages with adjustable amplitude and frequency are introduced, the memristor characteristics can well realize in this new model. Our results show that the new model not only accords with the standard of the window function, but also has better flexibility. It will provide a new idea for the memristor to be widely used in intelligent calculation, artificial synapse and many other fields.\\
+\bottomrule
+\end{longtable}
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Gibrat fluctuation and optimal navigation of the time-varying complex systems\\
+\textbf{Name} & Dingding Han\\
+\textbf{Affiliation} & School of Information Science and Technology, East China Normal\\
+\textbf{Email} & ddhan@ee.ecnu.edu.cn\\
+\textbf{Abstract} & Our ability to predict and control complex systems depends on the proper recognition of theirinternal organizing mechanisms. Since the discovery of the small-world and scale-free propertieswhich dominates the real world, the complexity science has been rapidly developed and graduallyapproaches the core principles of the complex systems. For a long time, the dynamic analysis ofcomplex systems is based on some simplified static or quasi-static models, while the fluctuationnature of their topologies is always neglected. In fact, when the time scale of the transportdynamics is comparable to that of the topological fluctuation, both the fundamental metrics such as network connectivity, shortest path, clustering and some transport dynamics such as searchingand navigation will go beyond our traditional knowledge. Hence a deep understanding of thefluctuation property and ongoing dynamic behavior of the time-varying complex systems is ofgreat significance in practical aspects such as propagation control and network optimization.\\
+\bottomrule
+\end{longtable}
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Random walk on signed network\\
+\textbf{Name} & Ying Fan\\
+\textbf{Affiliation} & BeiJing Normal University\\
+\textbf{Email} & yfan@bnu.edu.cn\\
+\textbf{Abstract} & Signed network is the network with positive and negative interaction, which has important theoretical and application value. This paper focuses on a common discrete dynamics---random walks on the signed networks, which are used to model Markovian dynamics and measure the similarities between nodes. And it also can be applied to detecting the community structure of networks. We find that most researches of random walks assume that the agent walks only along the positive links in the diffusion process. However, the negative edges play an important role in the signed network and we should consider this information in the design of the diffusion way. Hence, we propose different random walk mechanism that the walking probability on negative link is less than on the positive link. Based on the new mechanism, we apply our method into some empirical and artificial signed networks to explore their community structures. The results show that our method could reveal the meaningful community structures of these small signed networks. Meanwhile, we also find that this method also applies to the large-scale networks.\\
+\bottomrule
+\end{longtable}
+
+\newpage
+
+\subsection*{Session \uppercase\expandafter{\romannumeral 2}  \hspace{10mm} Chair: Changsong Zhou}
+\label{sec:orgbb15f56}
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Visibility graphlet approach to time series\\
+\textbf{Name} & Huijie Yang\\
+\textbf{Affiliation} & University of Shanghai for Science and Technology\\
+\textbf{Email} & hjyang@ustc.edu.cn\\
+\textbf{Abstract} & In the present paper we propose a new method to extract structural patterns at different scales in a time series. First, from a time series we extract all the possible segments with a specified length, then map every segment to a graphlet to represent the state of the system in the corresponding duration; Second, linking each pair of successive states results into a chain of states. All the distinguishable states form a state network (transfer matrix between states); Third, from the transfer matrix we can extract the short-term and long-term relations of the states and patterns of the time series. This method proves its powerful in identifying characteristics of deterministic processes , stochastic processes and empirical records for stock markets. References [1] M. Stephen, C. Gu, and H. Yang, Visibility Graphlet Approach to Chaotic Time Series. Chaos 26: 053107(2016). [2] M. Stephen, C. Gu, and H. Yang. Visibility graph based time series analysis. PLoS ONE 10(11):e143015(2015).\\
+\bottomrule
+\end{longtable}
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Progress on equivalent transformation and reciprocal characterization between complex networks\\
+\textbf{Name} & Yi Zhao\\
+\textbf{Affiliation} & Harbin Institute of Technology Shenzhen Graduate School\\
+\textbf{Email} & zhao.yi@hit.edu.cn\\
+\textbf{Abstract} & The complex networks and time series are two classical paradigms to describe the real complex systems. But the complexity of systems determines that we merely can obtain the specific properties of the object given the single paradigm. To address this problem, recently transformation between complex networks and time series becomes promising research. People begin to pay much attention to their internal relationship. Inspired by the previous work, we emphasize the theoretical foundation of equivalent transformation between complex networks and time series so as to ensure the consistency of dynamics of complex system during transformation, thereby providing theoretical evidences for their reciprocal characterization. Based on that, we confirm and quantify the corresponding relationship between both counterparts, and provide characterization methods for their integrated application in practice so as to comprehensively understand complex systems from the dual perspectives of complex networks and time series.\\
+\bottomrule
+\end{longtable}
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Dynamics of complex network: from monoplex to multiplex\\
+\textbf{Name} & Jin Zhou\\
+\textbf{Affiliation} & WuHan University\\
+\textbf{Email} & jzhou@whu.edu.cn\\
+\textbf{Abstract} & With the development of network science, multiplex network is a benchmark to describe our daily network. Dynamics, transmission and synchronization of a multiplex network are very different with those of a monoplex network because of the topology. This talk briefly introduces synchronizability and transmission of two-layer networks, including the influence caused by the coupling strength, coupling density and the degree-degree correlation. Besides, optimal strategies of pinning a multiplex network is given. Future work includes synchronous process and topology identification of multiplex networks.\\
+\bottomrule
+\end{longtable}
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Machine learning on complex networks\\
+\textbf{Name} & Zike Zhang\\
+\textbf{Affiliation} & \\
+\textbf{Email} & \\
+\textbf{Abstract} & \\
+\bottomrule
+\end{longtable}
+
+\newpage
+\subsection*{Session \uppercase\expandafter{\romannumeral 3} \hspace{10mm} Sub-session A \hspace{10mm} Chair: Ying Fan}
+\label{sec:org46ba682}
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Mean-field-based spectral methods for unsupervised learning\\
+\textbf{Name} & Pan Zhang\\
+\textbf{Affiliation} & Institute of Theoretical Physics, Chinese Academy of Sciences\\
+\textbf{Email} & panzhang@itp.ac.cn\\
+\textbf{Abstract} & \\
+\bottomrule
+\end{longtable}
+
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Exotic properties of quantum heat engine including the energy-conservation process\\
+\textbf{Name} & Congjie Ou\\
+\textbf{Affiliation} & Huaqiao University\\
+\textbf{Email} & jcou@hqu.edu.cn\\
+\textbf{Abstract} & A quantum heat engine of a specific type is studied. This engine contains a single particle confined in the infinite square well potential with variable width and consists of three processes: the isoenergetic process (which has no classical analogs) as well as the isothermal and adiabatic processes. It is found that the engine possesses exotic properties in its performance.The efficiency takes the maximum value when the expansion ratio of the engine is appropriately set, and, in addition, the lower the temperature is, the higher the maximum efficiency becomes, highlighting aspects of the influence of quantum effects on thermodynamics. Furthermore, we investigate the isoenergetic process in time-dependent quantum open systems. This issue is of importance in realizing quasi-stationary states of open systems such as quantum circuits and batteries. The Lindblad equation is employed and the time-dependent harmonic oscillator is analyzed as an illustrative example. It is shown that the Lindbladian operator is uniquely determined with the help of a Lie-algebraic structure, and the time derivative of the von Neumann entropy is shown to be nonnegative if the width of the harmonic potential monotonically increases in time.\\
+\bottomrule
+\end{longtable}
+
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Anomalous statistical behaviours resulted from fractional damping\\
+\textbf{Name} & Chunyang Wang\\
+\textbf{Affiliation} & QuFu Normal University\\
+\textbf{Email} & wchy@foxmail.com\\
+\textbf{Abstract} & We report some of our recent studies on the diffusion and chemical reaction dynamics of a Brownian particle immersed in the fractional damping environment. Results have shown that the fractional damping system can work appropriately as a simple model of the annoying fractional Brownian motion due to its avoiding of the complex fractional calculus. Further contributions and more researches are expected on this issue in the near future.\\
+\bottomrule
+\end{longtable}
+
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Quenched or annealed: a criterion for non-gaussian diffusion\\
+\textbf{Name} & Liang Luo\\
+\textbf{Affiliation} & Huazhong Agricultural University\\
+\textbf{Email} & luoliang@mail.hzau.edu.cn\\
+\textbf{Abstract} & Non-Gaussian diffusion has been intensively reported in recent experiments of cells and other soft systems. Several theoretical models have been proposed for the non-Gaussian anomalies, which are mainly in the framework of random walk with fluctuating diffusivity. The diffusivity is commonly assumed asa stochastic process independent of the position of the particle. The temporal correlated diffusivity leads to dynamical heterogeneity in short time scale. This is indeed an annealed model for dynamical disordered environment. Its quenched counterpart concerns position-dependent diffusivity due to glassy environment in the cell. We carefully analyzed a quenched model for non-Gaussian diffusion in this work. During the reconstruction of the hidden fluctuating diffusivity from the simulated trajectories, we realized the differences between transient diffusivity (from statistics over time) and local diffusivity (from statistics over space). It hence offer a criterion to distinguish the quenched and annealed dynamics observed in the experiments. We further analyzed the sample-to-sample fluctuation in the quenched model, which would also not be ignored in the experiments on cells\\
+\bottomrule
+\end{longtable}
+
+\newpage
+\subsection*{Session \uppercase\expandafter{\romannumeral 3} \hspace{10mm} Sub-session B \hspace{10mm} Chair: Liang Huang}
+\label{sec:orgba88674}
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Explosive phenomena in complex networks\\
+\textbf{Name} & Yong Zou\\
+\textbf{Affiliation} & East China Normal University\\
+\textbf{Email} & yzou@phy.ecnu.edu.cn\\
+\textbf{Abstract} & Explosive percolation, which was discovered in 2009, corresponds to an abrupt change in the network’s structure, and explosive synchronization (which is concerned, instead, with the abrupt emergence of a collective state in the networks’ dynamics) was studied as early as the first models of globally coupled phase oscillators were taken into consideration. Given their relevance to practical applications, explosive percolation and synchronization have attracted a comprehensive and lasting attention in various fields, and have stimulated a large amount of exciting works and debates. The result is that many substantial contributions and progresses (including experimental verifications) are today available, which provide a rather deep insight on the crucial structural and dynamical mechanisms at the basis of the abruptness of the two transitions. It is therefore now the time to offer a comprehensive review on the current state of the art on the subject, which would offer a reflected and thought out viewpoint on the many achievements and developments, as well as a weighted and meditated outlook to the still open questions and to the possible directions for future research. In this talk, I will show some of our contributions in these two research directions.\\
+\bottomrule
+\end{longtable}
+
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Mutual representation between nonlinear time series and complex network graphs and its applications\\
+\textbf{Name} & Jie Liu\\
+\textbf{Affiliation} & Research Centre of Nonlinear Science, Wuhan Textile University, P R China.\\
+\textbf{Email} & liujie@wtu.edu.cn\\
+\textbf{Abstract} & In recent several years, several types of new mapping methods had been made to bridge the gap between time series and complex networks, which aims to study the usage of network features to depict geometry of different type of time series. Some important studies have shown that, different types of time series is corresponding to different types of topological structure. But what relationship between these topology characters (ie.,the network characteristic quantities) and the original time series, is still unclear. How to apply the network analysis method to depict the characteristics of the original time series' statistics (vice versa the inverse process of such a research) therefore become extremely urgent nowadays. This talk will recall and address on the internal relationship between nonlinear time series and complex networks (duality of networks and time series) for further application research. Some illustrations will be given for reference.\\
+\bottomrule
+\end{longtable}
+
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Analysis and modeling of the adaptive coevolution in heterogeneous double-layer networks\\
+\textbf{Name} & Xiaofan Liu\\
+\textbf{Affiliation} & Southeast University\\
+\textbf{Email} & xfliu@seu.edu.cn\\
+\textbf{Abstract} & This paper constructs a heterogeneous double-layer network of scientific collaboration and citation, using a dataset of computer science academic literatures. This paper examines the adaptive coevolution phenomenon between scientific collaboration and citation and presents a model of the heterogeneous double-layer networks which not only reproduces the adaptive coevolution phenomenon of the real network, but also fits multiple measures of real network well. Our work may provide a feasible way to understanding the adaptive inter-layer interaction in heterogeneous double-layer networks.\\
+\bottomrule
+\end{longtable}
+
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Risk contagion analysis based on a complex credit network model\\
+\textbf{Name} & Xin Zhang\\
+\textbf{Affiliation} & Shanghai Maritime University\\
+\textbf{Email} & zhangxin@shmtu.edu.cn\\
+\textbf{Abstract} & The recent crisis has brought to the fore a crucial question that remains still open: what is the role of financial network plays in systemic risk propagation? We have presented an analysis of the impact that network topology can have on systemic risk. Our results extend previous studies on contagion in random interbank network to coupled credit network consisting of bank and firm sector. We investigate the stability of several benchmark topologies in a simple default cascading dynamics in credit networks.Our results emphasize the role played by “contagious links” and show that institutions which contribute most to network instability have both large connectivity and a large fraction of contagious links. We also find that no single topology is always superior to others. In particular, scale-free networks can be both more robust and more fragile than homogeneous architectures. This finding has important policy implications.\\
+\bottomrule
+\end{longtable}
+
+
+
+\newpage
+\subsection*{Session \uppercase\expandafter{\romannumeral 4} \hspace{10mm} Sub-session A \hspace{10mm} Chair: Jiping Huang}
+\label{sec:org10ab4ba}
+
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Emergence and control of collective behavior in resource-allocation systems\\
+\textbf{Name} & Zigang Huang\\
+\textbf{Affiliation} & Lanzhou University\\
+\textbf{Email} & huangzg@lzu.edu.cn\\
+\textbf{Abstract} & The phenomena of multiple agents competing for limited resources are ubiquitous in nature. e.g. investors in financial systems, vehicles in traffic systems and predators in ecosystems. Complex underlying interaction induces rich phenomenon such as herding behavior, collapse and panic crowd, which are actually very harmful to the system efficiency. To explore controlling schemes to optimize resource allocation is significant practically and theoretically. In our previous works, we adopt the Minority Game (MG), an essential model for resource-allocation system, and systematically propose theoretical framework for the emergence of herding, and provide the control schemes for optimal resource allocation\\
+\bottomrule
+\end{longtable}
+
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & \\
+\textbf{Name} & Zhifu Huang\\
+\textbf{Affiliation} & Huaqiao University\\
+\textbf{Email} & zfhuang@hqu.edu.cn\\
+\textbf{Abstract} & \\
+\bottomrule
+\end{longtable}
+
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Spreading dynamics of forget-remember mechanism\\
+\textbf{Name} & Shengfeng Deng\\
+\textbf{Affiliation} & Central China Normal University\\
+\textbf{Email} & gitsteven@gmail.com\\
+\textbf{Abstract} & e study extensively the forget-remember mechanism (FRM) for message spreading, originally introduced in Eur. Phys. J. B 62, 247 (2008). The freedom of specifying forget-remember functions governing the FRM can enrich the spreading dynamics to a very large extent. The master equation is derived for describing the FRM dynamics. By applying the mean field techniques, we have shown how the steady states can be reached under certain conditions, which agrees well with the Monte Carlo simulations. The distributions of forget and remember times can be explicitly given when the forget-remember functions take linear or exponential forms, which might shed some light on understanding the temporal nature of diseases like flu. For time-dependent FRM there is an epidemic threshold related to the FRM parameters. We have proven that the mean field critical transmissibility for the SIS model and the critical transmissibility for the SIR model are the lower and the the upper bounds of the critical trans\\
+\bottomrule
+\end{longtable}
+
+\newpage
+\subsection*{Session \uppercase\expandafter{\romannumeral 4} \hspace{10mm} Sub-session B \hspace{10mm} Chair: Xingang Wang}
+\label{sec:orgf98b6c3}
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Strengthen the circadian rhythms\\
+\textbf{Name} & Changgui Gu\\
+\textbf{Affiliation} & University of Shanghai for Science and Technology\\
+\textbf{Email} & gu \_ changgui@163.com\\
+\textbf{Abstract} & Aging or jetlag results in weak 24 h rhythms of physiology and behavioral activity. We try to find some ways to strengthen the weak 24 h rhythms from experiment and modeling, for example the voluntary exercise, the structure of neuronal network and so on.\\
+\bottomrule
+\end{longtable}
+
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Evidence and modeling for heavy-tail phenomena in man-made systems\\
+\textbf{Name} & Ye Wu\\
+\textbf{Affiliation} & Beijing Normal University\\
+\textbf{Email} & wuye@bupt.edu.cn\\
+\textbf{Abstract} & Heavy-tail phenomena was widely found in the world. I will introduce the heavy-tail phenomena in the communication equipment and in the dianping.com and explain this phenomena by mathematical model.\\
+\bottomrule
+\end{longtable}
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Stock market as temporal network\\
+\textbf{Name} & Yunfeng Chang\\
+\textbf{Affiliation} & Chungbuk National University\\
+\textbf{Email} & changyf@ctgu.edu.cn\\
+\textbf{Abstract} & Communities are ubiquitous in nature and society. Individuals that share common properties often self-organize to form communities. Avoiding the shortages of computation complexity, pre-given information and unstable results in different run, we propose a simple and efficient method to deepen our understanding of the emergence and diversity of communities in complex systems. By introducing the rational random selection, our method reveals the hidden deterministic and normal diverse community states of community struc- ture. To demonstrate this method, we test it with real-world systems. The results show that our method could not only detect community structure with high sensitivity and reliability, but also provide instructional information about the hidden deterministic community world and our normal diverse community world by giving out the core-community, the real-community, the tide and the diversity. This is of paramount importance in understanding, predicting, and controlling a variety of collective behaviors in complex systems.\\
+\bottomrule
+\end{longtable}
+
+
+\newpage
+\section*{October 15th}
+\label{sec:org0a5f6da}
+
+\subsection*{Session \uppercase\expandafter{\romannumeral 1}  \hspace{10mm} Chair: Zhigang Zheng}
+\label{sec:org8e74fcb}
+
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Recent research progress on controllability transition in complex networks\\
+\textbf{Name} & Binghong Wang\\
+\textbf{Affiliation} & Department of Modern Physics, University of Science and Technology of China\\
+\textbf{Email} & bhwang@ustc.edu.cn\\
+\textbf{Abstract} & The network control problem has been attracted increasing attention from avoiding cascading failures of power-grids to managing ecological networks. It is proved that the numerical control can be achieved if the number of control inputs exceeds the transition point. Here we investigated the effect of network assortativity (degree correlation) on numerical controllability of networks in both real networks and modeling networks, finding that the transition point of the number of control inputs greatly depends on assortativity in sparse undirected networks and there exists a minimum value of the transition point with increasing of degree correlation. More interestingly, the effect of assortativity (degree correlation) on the transition point cannot be observed in dense networks for numerical controllability, which is contrary to the result of structural controllability. In the condition of directed random networks and scale-free networks, the influence of assortativity is determined by the types of correlations. Our approach provides the understanding of control problems in complex sparse networks.\\
+\bottomrule
+\end{longtable}
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Degree correlation induce bimodality in controlling complex networks\\
+\textbf{Name} & Tao Jia\\
+\textbf{Affiliation} & Southwest University\\
+\textbf{Email} & tjia@swu.edu.cn\\
+\textbf{Abstract} & Our ability to control the whole network can be achieved via a small set of nodes. While the minimum number of nodes needed for control is fixed in a given network, nodes do not participate in control equally: some need to be always controlled (critical nodes) whereas some do not need any external control (redundant nodes). Previous work has discovered a bimodal phenomenon in control, characterized by a bifurcation diagram of the number of redundant nodes, which predicts two distinct control modes when the network is dense enough. Here we extend the analysis to networks with degree correlations. By fixing the average degree and varying the out- and in-degree correlation of a network, we observe a similar bifurcation diagram, indicating that degree correlation can also drive a network to different control models. Using an analytical approach, we adequately explain the emergence of bimodality caused by degree correlations. As is well known that most real networks are not random, our results suggest that the bimodality in control can be a much universal phenomenon in real systems.\\
+\bottomrule
+\end{longtable}
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Hysteresis and duration dependence of financial crises in the US: evidence from 1871-2016\\
+\textbf{Name} & Rui Menezes\\
+\textbf{Affiliation} & ISCTE-IUL and BRU-IUL\\
+\textbf{Email} & rui.menezes@iscte.pt\\
+\textbf{Abstract} & This paper analyses the duration dependence of events that trigger volatility persistence in stock markets. Such events, in our context, are monthly spells of contiguous price decline or negative returns for the S\&P500 stock market index over the last 145 years. Factors known to affect the duration of these spells are the magnitude or intensity of the price decline, long-term interest rates and economic recessions, among others. The result of interest is the conditional probability of ending a spell of consecutive months over which stock market returns remain negative. In this paper, we rely on continuous time survival models to investigate this question. Several specifications were attempted under the accelerated failure time assumption. The best fit of the various models endeavored was obtained for the log-Normal distribution. This distribution yields a non-monotonic hazard function that increases up to a maximum and then decreases. The peak is achieved 2-3 months after the spells onset with a hazard of around 0.9 or higher; this hazard then decays asymptotically to zero. Spell duration increases during recessions, when interest rate rises and when price declines are more intense. The main conclusion is that short spells of negative returns are mainly frictional while long spells become structural and trigger hysteresis effects after an initial period of adjustment. These results may be important for policy-makers.\\
+\bottomrule
+\end{longtable}
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Statistical distribution of the length of words\\
+\textbf{Name} & Mauricio Pato\\
+\textbf{Affiliation} & University of São Paulo\\
+\textbf{Email} & mpato@if.usp.br\\
+\textbf{Abstract} & Treating a text, after the removal of paragraphs and punctuations, as a spectrum of blanks, the distributions of the length of words of ten Indo-European languages are analyzed. Using models from the statistical theory of spectra to fit the empirical data, it is found that the ten languages can be classified into two families: one with words that follow a Wigner-like distribution while the words of the other obey a Poisson-like distribution.\\
+\bottomrule
+\end{longtable}
+
+
+\newpage
+\subsection*{Session \uppercase\expandafter{\romannumeral 2}  \hspace{10mm} Chair: Xinjian Xu}
+\label{sec:org876a3d0}
+
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Universal patterns behind big data of passenger flight departure delays in United States\\
+\textbf{Name} & Chenping Zhu\\
+\textbf{Affiliation} & Nanjing University of Aeronautics and Astronautics\\
+\textbf{Email} & oldpigman1234@126.com\\
+\textbf{Abstract} & In airports all over the world, flight delays happen every day, bringing tremendous loss of airlines and passengers. Through two phenomenological model. Concerning propagation delays, i.e., successive flight delays caused by late-arrival of immediately preceding flight with the same aircraft, we mined departure delay records of the Bureau of Transportation Statistics (BTS) of United States from 1995 to 2014. Two types of universal patterns of complementary cumulative distribution functions (CCDF) of domestic departure delays are revealed: shift power-law (SPL) and exponentially truncated shift power-law (ETSPL). Three distinctive quantities emerge as new metrics to measure operation qualities of airlines: shift parameter  in both CCDFs, compensation interval  and critical delay  for airlines following ETSPL. In general, the more homogeneity an airline has in its departure delay distribution, the weaker ability for it to absorb immediately preceding delays. Duet data-mining accompanied by phenomenological models provides a statistical physical approach to checking the precision and validation ranges of the models, and hopefully to be applied across different fields.\\
+\bottomrule
+\end{longtable}
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Some progresses in modeling, analysis and application of interdependent complex networks\\
+\textbf{Name} & Wenlian Lu\\
+\textbf{Affiliation} & School of Mathematical Sciences, Fudan University\\
+\textbf{Email} & wenlian@fudan.edu.cn\\
+\textbf{Abstract} & Interdependent networks are of basic models towards networks of networks, where the interactions between subnetworks are considered to support each subnetworks. This model has widely applied to model infrastructure networks, social networks, and economic networks etc. this talk, I will introduce some progresses in analyzing and applying this sort of models in twofold. First, I will present a simple and efficient algorithm to maximize the largest eigenvalue of interdependent network by optimally selecting the inter-network connects. Second, I will present an example of applying this model for a novel bi-clustering algorithm by detecting the community structure on interdependent networks.\\
+\bottomrule
+\end{longtable}
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Reconstructing complex networks from discrete time series\\
+\textbf{Name} & Haifeng Zhang\\
+\textbf{Affiliation} & Anhui University\\
+\textbf{Email} & zhhf\(_{\text{3}}\)@163.com\\
+\textbf{Abstract} & Data based reconstruction of complex networked systems has been an active area of research in network science and engineering with applications in a wide range of disciplines. In this talk, I will introduct two methods regarding network reconstruction. One approach is based on the statistical inference, the other is the mean-field based maximum likelihood estimation approach. different approaches handle different situations. Our results indicate that the performance of each approach is superior to the existing methods.\\
+\\
+\bottomrule
+\end{longtable}
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Attack vulnerability and epidemic dynamics on two interdependent networks\\
+\textbf{Name} & Chengyi Xia\\
+\textbf{Affiliation} & Tianjin University of Technology\\
+\textbf{Email} & xialooking@163.com\\
+\textbf{Abstract} & In this talk, I will discuss two problems, on one hand, I will talk about the impact of Partially coupling and coupling preference on the attack vulnerability on two interdependent networks; on the other hand, I will the epidemic processes on two multiplex networks, and investigate the effect of heterogeneous individual awareness on the spreading behaviors within complex populations. The results indicate that interdependency further enriches our understanding regarding the structural properties and dynamics within real-world networks.\\
+\bottomrule
+\end{longtable}
+
+\newpage
+\begin{longtable}{p{2cm}p{14cm}}
+\toprule
+\textbf{Title} & Hybrid dynamics of complex biological network\\
+\textbf{Name} & Zhihong Guan\\
+\textbf{Affiliation} & Huazhong University of Science and Technology\\
+\textbf{Email} & zhguan@mail.hust.edu.cn\\
+\textbf{Abstract} & With the development of network science, multiplex network is a benchmark to describe our daily network. Dynamics, transmission and synchronization of a multiplex network are very different with those of a monoplex network because of the topology. This talk briefly introduces synchronizability and transmission of two-layer networks, including the influence caused by the coupling strength, coupling density and the degree-degree correlation. Besides, optimal strategies of pinning a multiplex network is given. Future work includes synchronous process and topology identification of multiplex networks.\\
+\bottomrule
+\end{longtable}
+\end{document}

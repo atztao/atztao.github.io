@@ -1,0 +1,41 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /home/zhangtao/Dropbox/ztao1991.github.io/web/spmcs2017_program_1.txt
+
+
+* October 13th \hspace{5mm} Session \uppercase\expandafter{\romannumeral 1}  \hspace{10mm} Chair: Binghong Wang
+:PROPERTIES:
+:ARCHIVE_TIME: 2017-10-03 二 21:22
+:ARCHIVE_FILE: ~/Dropbox/ztao1991.github.io/web/spmcs2017_program_1.txt
+:ARCHIVE_CATEGORY: spmcs2017_program_1
+:END:
+
+
+
+#+ATTR_LATEX: :align p{2cm}|p{14cm} :environment longtable :environment longtable
+| *Title*       | How neural systems fuse information from different channels |
+| *Name*        | K.Y. Michael Wong                                           |
+| *Affiliation* | Hong Kong University of Science and Technology              |
+| *Email*       | phkywong@ust.hk                                             |
+| *Abstract*  | Neural systems gather information from different channels resulting in enhanced reliability. The optimal estimate is given by Bayes' rule, and remarkably the brain can achieve this optimum. It is therefore interesting to consider the neural architecture and mechanism underlying this feat. We study a decentralized network architecture where same-channel and cross-channel information are processed in parallel. Using stochastic gradient descent, projections to basis functions, and a perturbative approach in the limit of weak correlation, the most striking discovery is that the direct and indirect cross-channel pathways are opposite to each other -- an apparently redundant architecture.                                                            |
+
+
+
+#+ATTR_LATEX: :align p{2cm}|p{14cm} :environment longtable
+| *Title*       | C-MaxEnt and Bayesian approach to extreme values |
+| *Name*        | Sumiyoshi Abe                                    |
+| *Affiliation* | Mie University, Japan                            |
+| *Email*       | suabe@sf6.so-net.ne.jp                           |
+| *Abstract*  | The nature of a complex system can often be dominated by rare events. Examples include seismicity, floods, and stock markets, where extreme-value statistics may play an important role. Since big data are, in general, not available for rare events, the Bayesian approach is necessarily attractive. Here, a succinct explanation is given about the recently proposed method for selecting priors in the Bayesian approach, which is referred to as the conditional maximum entropy method (C-MaxEnt). This method is developed in analogy with statistical mechanics of a system whose dynamics contains largely separated two or more time scales. It is shown how C-MaxEnt enables one to systematically calculate non-informative priors for extreme-value statistics.                                                 |
+
+
+
+#+ATTR_LATEX: :align p{2cm}|p{14cm} :environment longtable
+| *Title*       | Interface facilitated energy transport in coupled nonlinear lattices |
+| *Name*        | Zhigang Zheng                                                        |
+| *Affiliation* | Huaqiao University                                                   |
+| *Email*       | zgzheng@hqu.edu.cn                                                   |
+| *Abstract*  | It is generally expected that the interface coupling leads to the suppression of thermal transport through coupled nanostructures due to the additional interface phonon-phonon scattering. However, recent experiments demonstrated that the interface van der Waals interactions can significantly enhance the thermal transfer of bonding boron nanoribbons compared to a single freestanding nanoribbon. To obtain a more indepth understanding on the important role of the nonlinear interface coupling in the heat transports, we explore the effect of nonlinearity in the interface interaction on the phonon transport by studying the coupled one-dimensional (1D) Frenkel-Kontorova lattices. It is found that thermal conductivity increases with increasing interface nonlinear intensity for weak interchain nonlinearity. By developing the effective phonon theory of coupled systems, we calculate the dependence of heat conductivity on interfacial nonlinearity in weak interchain couplings regime which is qualitatively in good agreement with the result obtained from molecular dynamics simulations. Moreover, we demonstrate that, with increasing interface nonlinear intensity, the system dimensionless nonlinearity strength is reduced, which in turn gives rise to the enhancement of thermal conductivity. Our results pave the way for manipulating the energy transport through coupled nanostructures for future emerging applications.                                                                     |
+
+

@@ -1,0 +1,155 @@
+#+TITLE: *SPMCS-2017 Program*
+#+LATEX_CLASS: org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,article,10pt]
+#+LATEX_HEADER: \usepackage[table]{xcolor}
+#+LATEX_HEADER: \usepackage{xeCJK,fontspec}
+#+LATEX_HEADER: \setmainfont{Times New Roman}
+#+LATEX_HEADER: \setsansfont{Helvetica}
+#+LATEX_HEADER: \setmonofont{Courier New}
+#+LATEX_HEADER: \setCJKmainfont{SimSun} 
+#+LATEX_HEADER: \setCJKsansfont{Microsoft YaHei} 
+#+LATEX_HEADER: \setCJKmonofont{FZYTK.ttf} 
+#+LATEX_HEADER: \linespread{1.2}
+
+#+OPTIONS: num:nil toc:nil author:nil date:nil
+* October 13th
+
+#+ATTR_LATEX: :align llp{10cm}
+| 8:00-8:15 | Alexandre Qiuping Wang | Welcome Address |
+
+
+
+
+** _Session \uppercase\expandafter{\romannumeral 1}  \hspace{10mm} Chair: Binghong Wang_
+#+ATTR_LATEX: :align llp{10cm}
+|  8:15-8:45 | K.Y.Michael Wong       | How Neural Systems Fuse Information from Different Channels          |
+|  8:45-9:15 | Sumiyoshi Abe          | C-MaxEnt and Bayesian Approach to Extreme Values                     |
+|  9:15-9:45 | Zhigang Zheng          | Interface Facilitated Energy Transport in Coupled Nonlinear Lattices |
+| @@latex:\cellcolor{blue!25}@@9:45-10:15 | @@latex:\cellcolor{blue!25}@@ *Photo And Coffee Break* |                                                                      |
+
+
+
+
+** _Session \uppercase\expandafter{\romannumeral 2}  \hspace{10mm} Chair: Abe Sumiyoshi_
+
+
+#+ATTR_LATEX: :align llp{10cm}
+| 10:15-10:45 | Aiguo Xu        | Discrete Boltzmann Modeling of Non-equilibrium Complex Flows               |
+| 10:45-11:15 | Alberto Robledo | An unorthodox thermal system analogue of the onset of chaos                |
+| 11:15-11:45 | Jiping Huang    | Macroscopic network of thermal conduction                                  |
+| 11:45-12:15 | Liang Huang              | Symmetry blockade and route to equipartition in square graphene resonators |
+| @@latex:\cellcolor{blue!25}@@ 12:15-14:00 | @@latex:\cellcolor{blue!25}@@ *Lunch Break*                                                               
+
+\newpage
+
+* October 13th
+
+** _Session \uppercase\expandafter{\romannumeral 3}  \hspace{10mm} Chair: Alberto Robledo_
+
+#+ATTR_LATEX: :align llp{10cm}
+| 14:00-14:30 | Chin-Kun Hu        | Universality and scaling in human and social systems           |
+| 14:30-15:00 | Armen Allahverdyan | Modeling phoneme distribution: the effect of author-dependence |
+| 15:00-15:30 | Pan-Jun Kim        | Systems Approach to Complex Human Microbial Networks           |
+| @@latex:\cellcolor{blue!25}@@15;30-15:50 | @@latex:\cellcolor{blue!25}@@ *Coffee Break*      |                                                                |
+
+** _Session \uppercase\expandafter{\romannumeral 4}  \hspace{5mm} Chair: K. Y. Michael Wong_
+
+#+ATTR_LATEX: :align llp{10cm}
+| 15:50-16:20 | Xingang Wang  | Synchronous Patterns in Complex Networks                                  |
+| 16:20-16:50 | Yanwu Wang    | Collective Behavior of Networked Systems                                  |
+| 16:50-17:20 | Xinjian Xu    | Information propagation in directed networks                              |
+| 17:20-17:50 | Chengyi Xia   | Attack Vulnerability and Epidemic Dynamics on two interdependent networks |
+
+\newpage
+
+* October 14th
+
+** _Session \uppercase\expandafter{\romannumeral 1}  \hspace{10mm} Chair: Aiguo Xu_
+#+ATTR_LATEX: :align llp{10cm}
+|  8:00-8:30 | Changsong Zhou | Complex Neural Connectivity and Activity: Perspective from Cost-Efficiency Trade-off |
+|  8:30-9:00 | Jiqian Zhang   | New Nonlinear Dopant Kinetic Model of Memristor                                      |
+|  9:00-9:30 | Dingding Han   | Gibraltar Fluctuation and Optimal Navigation of the Time-varying Complex Systems     |
+| @@latex:\cellcolor{blue!25}@@ 9:30-10:00 | @@latex:\cellcolor{blue!25}@@ *Coffee Break* |                                                                                      |
+
+
+** _Session \uppercase\expandafter{\romannumeral 2}  \hspace{10mm} Chair: Changsong Zhou_
+
+
+#+ATTR_LATEX: :align llp{10cm}
+| 10:00-10:30 | Huijie Yang | Visibility Graphlet Approach To Time Series                                                                    |
+| 10:30-11:00 | Yi Zhao     | Progress on Equivalent transformation and reciprocal characterization between complex networks and time series |
+| 11:00-11:30 | Jianguo Liu | Modelling and Application of Online User Collective behaviors                                                  |
+| 11:30-12:00 | Zike Zhang  | Machine Learning on Complex Networks                                                                           |
+| @@latex:\cellcolor{blue!25}@@ 12:00-14:00 | @@latex:\cellcolor{blue!25}@@ *Lunch Break* |                                                                                                                |
+
+\newpage
+
+* October 14th
+
+** _Session \uppercase\expandafter{\romannumeral 3} \hspace{10mm} Sub-session A \hspace{10mm} Chair: Zhigang Zheng_
+#+ATTR_LATEX: :align llp{10cm}
+| 14:00-14:25 | Pan Zhang    | Mean-field-based spectral methods for unsupervised learning                        |
+| 14:25-14:50 | Congjie Ou   | Exotic properties of quantum heat engine including the energy-conservation process |
+| 14:50-15:15 | Chunyang Wang          | Anomalous Statistical Properties Resulted From Fractional Damping                  |
+| 15:15-15:40 | Liang Luo           | Quenched or Annealed: A criterion for non-Gaussian diffusion                       |
+| @@latex:\cellcolor{blue!25}@@ 15:40-16:00 | @@latex:\cellcolor{blue!25}@@ *Coffee Break* |                                                                                    |
+
+** _Session \uppercase\expandafter{\romannumeral 3} \hspace{10mm} Sub-session B \hspace{10mm} Chair: Liang Huang_
+
+#+ATTR_LATEX: :align llp{10cm}
+| 14:00-14:25 | Ying Fan       | Random walk on signed network                                                                       |
+| 14:25-14:50 | Jie Liu        | Mutual representation between nonlinear time series and complex network graphs and its applications |
+| 14:50-15:15 | Haifeng Zhang  | Reconstructing complex networks from discrete time series                                           |
+| 15:15-15:40 | Yong Zou             | Explosive phenomena in complex networks                                                             |
+| @@latex:\cellcolor{blue!25}@@ 15:40-16:00 | @@latex:\cellcolor{blue!25}@@ *Coffee Break*  |                                                                                                     |
+
+\newpage
+
+* October 14th
+** _Session \uppercase\expandafter{\romannumeral 4} \hspace{10mm} Sub-session A \hspace{10mm} Chair: Jiping Huang_
+
+#+ATTR_LATEX: :align llp{10cm}
+|                               16:00-16:25 | Zigang Huang   | TBA                              |
+|                               16:25-16:50 | Changgui Gu    | Strengthen the circadian rhythms |
+|                               16:50-17:15 | Zhifu Huang    | TBA                              |
+|                               17:15-17:40 | Cong Li        | TBA                              |
+|                               17:40-18:00 | Shengfeng Deng | TBA                              |
+| @@latex:\cellcolor{blue!25}@@      18:30- | @@latex:\cellcolor{blue!25}@@ *Banquet*       |                                  |
+
+
+** _Session \uppercase\expandafter{\romannumeral 4} \hspace{10mm} Sub-session B \hspace{10mm} Chair: Xinggang Wang_
+
+#+ATTR_LATEX: :align llp{10cm}
+|                          16:00-16:25 | Yunfeng Chang  | The way to uncover community structure with core and diversity                           |
+|                          16:25-16:50 | Xiaofan Liu    | Analysis and Modeling of the Adaptive Coevolution in Heterogeneous Double-Layer Networks |
+|                          16:50-17:15 | Ye Wu          | Evidence and modeling for heavy-tail phenomena in man-made systems                       |
+|                          17:15-17:40 | Xin Zhang      | Risk Contagion Analysis Based on a Complex Credit Network Model                          |
+|                          17:40-18:00 | Longfeng  Zhao | Stock market as temporal network                                                         |
+| @@latex:\cellcolor{blue!25}@@ 18:30- | @@latex:\cellcolor{blue!25}@@ *Banquet*       |                                                                                          |
+
+\newpage
+
+* October 15th
+
+
+** _Session \uppercase\expandafter{\romannumeral 1}  \hspace{10mm} Chair:  _
+
+#+ATTR_LATEX: :align llp{10cm}
+|                                8:00-8:30 | Chenping Zhu  | Universal patterns behind big data of passenger flight departure delays in United States  |
+|                                8:30-9:00 | Jinshan Wu    | What is Scientometrics from the Perspective of Network Science and Data Science           |
+|                                9:00-9:30 | Rui Menezes   | Hysteresis and Duration Dependence of Financial Crises in the US: Evidence from 1871-2016 |
+|                               9:30-10:00 | Mauricio Pato | Statistical distribution of the length of words                                           |
+| @@latex:\cellcolor{blue!25}@@10:00-10:20 | @@latex:\cellcolor{blue!25}@@ *Coffee Break* |                                                                                           |
+
+
+** Session \uppercase\expandafter{\romannumeral 2}  \hspace{10mm} Chair: Wei Li
+
+#+ATTR_LATEX: :align lp{3.2cm}p{10cm}
+|-------------------------------------------+----------------------------------------------+------------------------------------------------------------------------------------------|
+|                               10:00-10:30 | Binghong Wang                                | Recent Research Progress on Controllability Transition in Complex Networks               |
+|                               10:30-11:00 | Tao Jia                                      | Degree correlation induce bimodality in controlling complex networks                     |
+|                               11:00-11:30 | Wenlian Lu                                   | Some progresses in modeling, analysis and application of interdependent complex networks |
+|                               11:30-12:00 | Junan Lu                                     | Dynamics of complex networks: From single-layer expand to multi-layer                    |
+| @@latex:\cellcolor{blue!25}@@ 12:00-14:00 | @@latex:\cellcolor{blue!25}@@ *Closing Remark* |                                                                                          |
+|-------------------------------------------+----------------------------------------------+------------------------------------------------------------------------------------------|
+
