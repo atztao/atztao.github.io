@@ -8,8 +8,8 @@ body{
 }
 
 div#header{
-    font-family: Helvetica, Tahoma, Arial, STXihei, “华文细黑”, Heiti, “黑体”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, sans-serif;
-/* height:150px; */
+    font-family: PingFangSC-Regular, 'Helvetica Neue', Helvetica, Tahoma, Arial, STXihei, “华文细黑”, Heiti, “黑体”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, sans-serif;
+    /* height:150px; */
     width:60%;
 
     /* background:#03549a center no-repeat; */
@@ -29,9 +29,9 @@ div#header a {
     text-decoration:none;
 }
 div#header h1{
-    
-/* font-family:Courier New,Arial, Helvetica, sans-serif; */
-    font-size:29px;    
+
+    /* font-family:Courier New,Arial, Helvetica, sans-serif; */
+    font-size:29px;
 }
 div#header p{
     font-family:PingFang SC,Helvetica, sans-serif;
@@ -64,8 +64,8 @@ div#content li{
     /* margin-left:40%; */
     text-align:center;
     /* float:cell; */
-/* list-style-type:none;  ssssssssssssss */
-       display:inline; 
+    /* list-style-type:none;  ssssssssssssss */
+    display:inline;
 }
 
 div#content li a h1{
@@ -94,7 +94,7 @@ div#intro{
 div#intro img{
     height:auto;
     width:120px;
-    
+
 }
 
 div#footer{
@@ -114,5 +114,3 @@ div#footer img{
 div#archive{
     margin:0px auto;
 }
-
-
