@@ -13,14 +13,14 @@ div#header{
 
     /* background:#03549a center no-repeat; */
     border-bottom: 2px solid #e7eaf1;
-        text-align:center;
+    text-align:center;
 }
 
 div#header h1{
-font-family:Courier New,Arial, Helvetica, sans-serif;
-font-size:29px;    
+    font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size:29px;
 }
 div#header p{
-        font-family:Helvetica, sans-serif;
-	font-size:15px;
+    font-family:'Helvetica Neue',Helvetica, sans-serif;
+    font-size:15px;
 }
