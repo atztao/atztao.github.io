@@ -2,8 +2,8 @@ body{
     /* background:#cdcdcd url(../img/complex_meitu_1.png) repeat-x; */
     /* background-image: -webkit-canvas(identifier); */
     /* background:#fff repeat-x; /\*#f7f8fa*\/ */
-    height:100%;
-    width:100%;
+    height:auto;
+    width:60%;
     /* text-align:center; */
 }
 

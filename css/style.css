@@ -6,6 +6,9 @@ body{
     width:100%;
     /* text-align:center; */
 }
+.bgimg {
+    background-image: url('./quoteBgSpacer.png');
+}
 
 div#header{
     font-family: PingFangSC-Regular, 'Helvetica Neue', Helvetica, Tahoma, Arial, STXihei, “华文细黑”, Heiti, “黑体”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, sans-serif;
@@ -13,9 +16,12 @@ div#header{
     width:60%;
 
     /* background:#03549a center no-repeat; */
-    border-bottom: 1.5px solid #e7eaf1;
+    
     text-align:center;
     margin:0 auto;
+    /* margin-bottom: 2px; */
+    border-bottom: 1.2px solid #e7eaf1;
+    
 }
 
 div#header a h1{
@@ -26,6 +32,11 @@ div#header a h1{
 div#header a {
     color:black;
 
+    /* font-size:32px; */
+    
+    /* margin-left:40%; */
+        
+    /* font-weight:bold; */
     text-decoration:none;
 }
 div#header h1{
@@ -48,6 +59,7 @@ div#content{
     /* height:27px; */
     /* height:20px; */
     font-family: Helvetica, Tahoma, Arial, STXihei, “华文细黑”, Heiti, “黑体”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, sans-serif;
+    /* font-size:32px; */
     /* font-family:PingFang SC,Helvetica, sans-serif; */
     /* margin-top:35px; */
     /* margin-left:210px; */
@@ -56,7 +68,7 @@ div#content{
     text-align:center;
 }
 div#content li{
-    /* font-size:20px; */
+    /* font-size:100px; */
     /* color:blue; */
     text-decoration:none;
     /* margin-left:40%; */
@@ -73,7 +85,7 @@ div#content li a h1{
     text-decoration:none;
 }
 div#content li a{
-    font-size:27px;
+    font-size:32px;
     text-decoration:none;
     margin:20px auto;
     /* margin-left:40%; */
