@@ -1,5 +1,6 @@
 body{
     /* background:#cdcdcd url(../img/complex_meitu_1.png) repeat-x; */
+    /* background:#ffffff url(../background.png) no-repeat fixed top ; */
     /* background-image: -webkit-canvas(identifier); */
     /* background:#fff repeat-x; /\*#f7f8fa*\/ */
     height:100%;
@@ -8,6 +9,14 @@ body{
 }
 .bgimg {
     background-image: url('./quoteBgSpacer.png');
+}
+
+.quotation{
+    font-size: 30px;
+    //margin: 0 auto;
+    quotes: "\201C""\201D""\2018""\2019";
+    padding: 10px 20px;
+    line-height: 1.4;
 }
 
 div#header{
