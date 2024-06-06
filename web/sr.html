@@ -74,8 +74,8 @@
 
             const tbody = document.getElementById('results-body');
             results.forEach((path, index) => {
-                // 忽略 README.md 文件
-                if (path.endsWith('README.md')) {
+                // 忽略特定文件
+                if (path.endsWith('README.md') || path.endsWith('src/juxtapose.css') || path.endsWith('src/juxtapose.min.js')) {
                     return;
                 }
                 const tr = document.createElement('tr');
