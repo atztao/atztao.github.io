@@ -85,7 +85,7 @@
                 const tdLink = document.createElement('td');
                 const a = document.createElement('a');
                 a.href = path;
-                a.textContent = path;
+                a.textContent = path.replace(/^web\//, '');
                 tdLink.appendChild(a);
                 tr.appendChild(tdLink);
 
