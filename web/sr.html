@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <link href="../css/style.css" rel="stylesheet" type="text/css">
-    <title>Super Resolution For Infrared</title>
+    <title>红外超分辨率</title>
     <style type="text/css">
         .tg {border-collapse:collapse;border-spacing:0;margin:0px auto;}
         .tg td {border-color:black;border-style:solid;border-width:1px;font-family:Times New Roman, sans-serif;font-size:12px;overflow:hidden;padding:4.0px 2px;word-break:normal;}
@@ -26,14 +26,14 @@
 </head>
 <body>
     <div id="header">
-        <a href="../index.html"><img alt="logo" src="../logo1.png" width="100px" height="60px" /></a>
+        <a href="../index.html"><img alt="" src="../logo1.png" width="100px" height="60px" /></a>
         <div class="bgimg">
-            <img alt="quote" src="../quotes.png"/>
+            <img alt="" src="../quotes.png"/>
             <font size="3.5px">&nbsp;&nbsp;没有一条定律不可为获致“更美”的效果起记而破坏。</font>
         </div>
     </div>
     <div id="content">
-        <li><a href="#"><font family="Times New Roman"><font size="5px">Super Resolution For Infrared</a></li>
+        <li><a href=""><font family="Times New Roman"><font size="5px">红外超分辨率</a></li>
         <hr width="256" size="2" noshade="noshade" align="center" color="#e7eaf1" />
         <div class="tg-wrap">
             <table id="tg-A2hZf" class="tg" style="undefined;table-layout: fixed; width: 580px">
@@ -44,50 +44,53 @@
                 <thead>
                     <tr>
                         <th class="tg-ul38">#</th>
-                        <th class="tg-ul38"><span style="font-weight:400;font-style:normal">Results of Different Methods With Ours</span></th>
+                        <th class="tg-ul38"><span style="font-weight:400;font-style:normal">不同方法与我们的结果比较</span></th>
                     </tr>
                 </thead>
-                <tbody id="results-table-body">
+                <tbody id="results-body">
                 </tbody>
             </table>
         </div>
     </div>
     <div id="footer">
-        <span>© 2017 张陶</span>
+        <span>© 2017 张陶 </span>
         <span class="dot">·</span>
         <span>版权所有</span>
     </div>
-    <script>
+    <script charset="utf-8">
         async function listDirectory(user, repo, directory) {
-            const url = `https://api.github.com/repos/${user}/${repo}/git/trees/master`;
+            const url = `https://api.github.com/repos/${user}/${repo}/git/trees/master?recursive=1`;
             const list = await fetch(url).then(res => res.json());
-            const dir = list.tree.find(node => node.path === directory);
-            if (dir) {
-                const dirUrl = `https://api.github.com/repos/${user}/${repo}/git/trees/${dir.sha}`;
-                const dirList = await fetch(dirUrl).then(res => res.json());
-                return dirList.tree.map(node => node.path);
-            }
+            const dir = list.tree.filter(node => node.path.startsWith(directory) && node.type === 'blob');
+            return dir.map(node => node.path);
         }
 
         async function loadResults() {
-            const results = await listDirectory('atztao', 'atztao.github.io', 'content/sr');
-            const tableBody = document.getElementById('results-table-body');
-            results.forEach((result, index) => {
-                const row = document.createElement('tr');
-                const cell1 = document.createElement('td');
-                cell1.textContent = index + 1;
-                const cell2 = document.createElement('td');
-                const link = document.createElement('a');
-                link.href = `content/sr/${result}`;
-                link.textContent = result;
-                cell2.appendChild(link);
-                row.appendChild(cell1);
-                row.appendChild(cell2);
-                tableBody.appendChild(row);
+            const user = 'your-username';  // 替换为你的GitHub用户名
+            const repo = 'your-repo';  // 替换为你的GitHub仓库名
+            const directory = 'content/sr';
+
+            const results = await listDirectory(user, repo, directory);
+
+            const tbody = document.getElementById('results-body');
+            results.forEach((path, index) => {
+                const tr = document.createElement('tr');
+                const tdIndex = document.createElement('td');
+                tdIndex.textContent = index + 1;
+                tr.appendChild(tdIndex);
+
+                const tdLink = document.createElement('td');
+                const a = document.createElement('a');
+                a.href = path;
+                a.textContent = path;
+                tdLink.appendChild(a);
+                tr.appendChild(tdLink);
+
+                tbody.appendChild(tr);
             });
         }
 
-        loadResults();
+        document.addEventListener('DOMContentLoaded', loadResults);
     </script>
 </body>
 </html>
