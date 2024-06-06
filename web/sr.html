@@ -74,6 +74,10 @@
 
             const tbody = document.getElementById('results-body');
             results.forEach((path, index) => {
+                // 忽略 README.md 文件
+                if (path.endsWith('README.md')) {
+                    return;
+                }
                 const tr = document.createElement('tr');
                 const tdIndex = document.createElement('td');
                 tdIndex.textContent = index + 1;
@@ -82,7 +86,7 @@
                 const tdLink = document.createElement('td');
                 const a = document.createElement('a');
                 a.href = path.replace(/^web\//, '');
-                a.textContent = path.replace(/^web\/content\/sr\//, '');
+                a.textContent = path.replace(/^web\/content\/sr\//, '');         // 去掉 "web/content/sr/" 前缀
                 tdLink.appendChild(a);
                 tr.appendChild(tdLink);
 
