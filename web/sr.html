@@ -74,6 +74,9 @@
 
             const tbody = document.getElementById('results-body');
             results.forEach((path, index) => {
+                // 去掉 "web/" 前缀
+                const displayPath = path.replace(/^web\//, '');
+                
                 const tr = document.createElement('tr');
                 const tdIndex = document.createElement('td');
                 tdIndex.textContent = index + 1;
